@@ -3,10 +3,10 @@ layout: post
 title:  "安装了jekyll"
 date:   2018-05-17 20:42:30 +0800
 categories: jekyll update
+site.pages:
 ---
 
 ## 有关jekyll的相关知识总结
 本地开发指令 `bundle exec jekyll serve --livereload`
 ### 主要文件夹的介绍
-* `_config.yml`常量的存放地址，可以随意调用
-* `_drafts`存放草稿的位置，一般用于未发表前，查看效果的命令`bundle exec jekyll serve --drafts`
+* `_config.yml`常

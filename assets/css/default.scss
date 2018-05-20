@@ -1,0 +1,22 @@
+---
+---
+
+header {
+    $height: 50px;
+    padding-left: 20px;
+    height: $height;
+    line-height: $height;
+    background-color: #444;
+    a {
+       $color: #fff;
+       color: #fff;
+       &:visited {
+        color: $color;
+       }
+    }
+}
+
+.am-article {
+    padding-top: 40px;
+    padding-left: 50px;
+}
