@@ -1,19 +1,49 @@
 ---
 ---
 
+code {
+    white-space: normal;
+}
 header {
     $height: 50px;
+    position: fixed;
+    width: 100%;
     margin-bottom: 50px;
     
     padding-left: 20px;
     height: $height;
     line-height: $height;
     background-color: #444;
+    z-index: 1;
     a {
        $color: #fff;
+       font-size: 20px;
        color: #fff;
        &:visited {
         color: $color;
        }
+    }
+}
+
+.am-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+footer {
+    $height: 50px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: $height;
+    line-height: $height;
+    color: #fff;
+    background-color: #444;
+
+    a>i {
+        &::before {
+            width: 20px;
+        }
+        color: #fff;
     }
 }
