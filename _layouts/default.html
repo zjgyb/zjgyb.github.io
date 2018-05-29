@@ -4,18 +4,32 @@
 
 <head>
     {% include head.html %}
-<body>
-    {% include header.html %}
 
-    <div class="am-container">
-        <div class="am-g">
-            <div class="am-u-sm-6 am-u-sm-offset-1">
-                {{ content }}
+    <body>
+        {% include header.html %}
+
+        <div class="am-container">
+            <div class="am-g">
+                <div class="am-u-sm-6 am-u-sm-offset-1">
+                    {{ content }}
+                </div>
+                <!-- <div class="am-u-sm-4">
+                    <div>
+                        <ul>
+                            {% for category in site.categories %}
+                            <li>
+                                <a href="/categories/{{ category | first }}/" title="view all posts">
+                                    {{ category | first }} {{ category | last | size }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div> -->
             </div>
-        </div> 
-    </div>
-    
-    {% include footer.html %}
-</body>
+        </div>
+
+        {% include footer.html %}
+    </body>
 
 </html>
