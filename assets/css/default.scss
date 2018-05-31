@@ -4,6 +4,12 @@
 code {
     white-space: normal;
 }
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+// 头部样式
 header {
     $height: 50px;
     position: fixed;
@@ -30,6 +36,7 @@ header {
     padding-bottom: 70px;
 }
 
+// 页脚样式
 footer {
     $height: 50px;
     position: absolute;
