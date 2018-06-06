@@ -3,8 +3,9 @@ email: zjsgyb@gmail.com
 description: >- # 网站的描述
   这是nicegong的个人博客
 keywords: 前端开发 nicegong # 关键词
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://zjgyb.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+article-img: "photoes/images.jpg" # 图片路径
 twitter_username: lxgyb
 github_username:  zjgyb
 
@@ -17,6 +18,7 @@ plugins:
 sass:
     sass-dir: _sass
     style: compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

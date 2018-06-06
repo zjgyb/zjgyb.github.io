@@ -1,8 +1,23 @@
 ---
 ---
 
-code {
-    white-space: normal;
+// 代码块
+pre {
+    // font-size: 87.5%;
+    padding: 10px 15px;
+    background-color: #000;
+    word-break: break-word;
+    overflow-x: auto;
+}
+
+pre code {
+    color: #fff;
+}
+
+// ul列表
+ul {
+    padding-left: 20px;
+    padding-top: 15px;
 }
 
 body {
