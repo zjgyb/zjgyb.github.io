@@ -1,21 +1,24 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="{{ page.title | site.description }}">
-    <meta name="keywords" content="{{ page.keywords | site.keywords }}">
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ site.keywords }}">
+    {% else %}
+    <meta name="keywords" content="{{ page.keywords }}">
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }}</title>
-
-    <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
-
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-    <link rel="icon" type="image/png" href="https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05083757/DES_what-does-a-front-end-developer-do_M-940x400.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <meta name="author" content="{{ site.author }}">
+    <title>{{ page.title }}</title>
+    <link rel="icon" type="image/png" href="{{ site.linkIco }}">
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/default.css">
+    <!-- Twitter summary cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.article-img }}" />
 </head>

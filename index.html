@@ -7,16 +7,13 @@ title: nicegong的博客
 <div class="col-sm-12 col-md-4">
     <a href="{{ post.url }}" class="article_link">
         <div class="card">
-            <!-- <a href="{{ post.url }}" class="article_link"> -->
-                {% if post.img == undefined %}
-                    <img class="card-img-top" src="{{ site.article-img }}" width="100%"/>
+                {% if post.img %}
+                    <img class="card-img-top" src="{{ post.img }}" width="100%"/>  
                 {% else %}
-                    <img class="card-img-top" src="{{ post.img }}" width="100%"/>
+                    <img class="card-img-top" src="{{ site.article-img }}" width="100%"/>
                 {% endif %}
-            <!-- </a> -->
             <div class="card-body">
                 <h5 class="card_title">{{ post.title }}</h5>
-                <!-- <p class="card_content">{{ post.content }}</p> -->
                 <p class="card_categories">categories: {{ post.categories }}</p>
             </div>
         </div>
