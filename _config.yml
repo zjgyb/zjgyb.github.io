@@ -6,7 +6,7 @@ keywords: 前端开发 nicegong 前端 zjgyb gyb lxgyb zjsgyb # 关键词
 author: zjgyb, nicegong, zjsgyb@gmail.com # 作者
 linkIco: https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05083757/DES_what-does-a-front-end-developer-do_M-940x400.png # 网站图标
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://zjgyb.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://zjgyb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 article-img: "photoes/images.jpg" # 图片路径
 twitter_username: lxgyb
 github_username:  zjgyb

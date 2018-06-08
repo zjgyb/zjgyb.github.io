@@ -23,6 +23,6 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
-    <meta property="og:image" content="{{ site.url }}/{{ site.article-img }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.article-img }}">
     {% endif %}
 </head>
