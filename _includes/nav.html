@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="nav">
+       
+        <a href="{{ site.url }}">
+        {% if page.title == 'nicegong的博客' %}
+            <span class="active">All</span>
+        {% else %}
+            <span>All</span>
+        {% endif %}
+        </a>
+       
+        <a href="{{ site.url }}/about">
+        {% if page.title == 'About' %}
+         <span class="active">About</span>
+        {% else %}
+           <span>About</span>
+        {% endif %}
+        </a>
+        <a href="./#">
+            <span>Contact</span>
+        </a>
+    </div>
+</div>

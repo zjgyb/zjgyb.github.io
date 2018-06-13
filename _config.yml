@@ -7,7 +7,7 @@ author: zjgyb, nicegong, zjsgyb@gmail.com # 作者
 linkIco: https://content-static.upwork.com/blog/uploads/sites/3/2015/05/05083757/DES_what-does-a-front-end-developer-do_M-940x400.png # 网站图标
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://zjgyb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-article-img: "photoes/images.jpg" # 图片路径
+article-img: "photoes/default.jpg" # 图片路径
 twitter_username: lxgyb
 github_username:  zjgyb
 
@@ -16,11 +16,14 @@ markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 sass:
     sass-dir: _sass
     style: compressed
 
+paginate: 6 # 文章数
+paginate_path: "page:num"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

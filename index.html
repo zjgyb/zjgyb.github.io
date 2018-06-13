@@ -3,23 +3,22 @@ layout: default
 title: nicegong的博客
 ---
 
-{% for post in site.posts %}
-<div class="col-sm-12 col-md-4">
+{% for post in paginator.posts %}
+<div class="col-12 col-sm-6 col-xl-4">
     <a href="{{ post.url }}" class="article_link">
         <div class="card">
                 {% if post.img %}
-                    <img class="card-img-top" src="{{ post.img }}" width="100%"/>  
+                    <img class="card-img-top" src="{{ site.url }}/{{ post.img }}" width="100%"/>  
                 {% else %}
-                    <img class="card-img-top" src="{{ site.article-img }}" width="100%"/>
+                    <img class="img-fluid card-img-top" src="{{ site.url }}/{{ site.article-img }}" width="100%"/>
                 {% endif %}
             <div class="card-body">
-                <h5 class="card_title">{{ post.title }}</h5>
+                <span>by nicegong {{ post.data | remove: '+0800' }}</span>
+                <h2 class="card_title">{{ post.title }}</h2>
+                <p>{{ post.content |  truncatewords: 2 }}</p>
                 <p class="card_categories">categories: {{ post.categories }}</p>
             </div>
         </div>
-        <!-- <footer>
-            post {{ post.date }}
-        </footer> -->
     </a>
 </div>
 {% endfor %}

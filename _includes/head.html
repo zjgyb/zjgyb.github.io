@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/default.css">
+    <link rel="stylesheet" href="/static/css/home.css">
     <!-- Twitter summary cards -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ site.twitter_username }}" />
     <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
-    {% if page.layout %}
     <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}"/>
     <meta property="og:image" content="{{ site.url }}/{{ site.article-img }}"/>
-    {% endif %}
 </head>

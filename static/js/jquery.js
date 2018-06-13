@@ -10,5 +10,6 @@ $(document).ready(function() {
             }
         }
     }
-    cutCon('.card_title', 20);
+    const CONTENT_LEN = 50;
+    cutCon('.card_title', CONTENT_LEN);
 });
