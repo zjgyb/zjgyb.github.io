@@ -1,6 +1,10 @@
 ---
 ---
 
+.row {
+    margin-bottom: 50px;
+}
+
 // 头部样式
 .header {
     // $height: 486.6px;
@@ -45,7 +49,7 @@
             text-align: center;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             .navbar-collapse {
                 position: absolute;
                 width: 100%;
@@ -112,11 +116,17 @@
         transition: 0.3s all ease-in-out;
         font-size: 15px;
         color: #444;
+
+        &:hover {
+            color: #fff;
+            font-weight: 400;
+            background-color: #47c9e5;
+        }
     }
 
     span.active {
         color: #fff;
-        font-weight: 500;
+        font-weight: 400;
         background-color: #47c9e5;
     }
 }
@@ -127,12 +137,17 @@
     padding-bottom: 30px;
 
     @at-root {
-        .row {
-            margin-bottom: 50px;
-        }
-
         .row .row {
             padding-right: 0;
+        }
+
+        .card-img-top {
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {     
+                opacity: 0.7;
+            }
         }
 
         @media screen and (min-width: 1200px){
@@ -155,8 +170,19 @@
             padding-top: 10px;
             font-size: 28px;
             font-weight: bold;
+            transition: 0.25s all ease;
+            color: #3f3f3f;
+
+            &:hover {
+                color: #47c9e5;
+            }
         }
 
+        // 内容的样式
+        .card_content {
+            font-size: 16px;
+            font-weight: normal;
+        }
         // 分类的css样式
         .card_categories {
             font-size: 16px;
@@ -175,6 +201,7 @@ $height: 50px;
     line-height: $height;
     color: #fff;
     background-color: #444;
+    text-align: center;
 }
 
 // 分页
@@ -218,7 +245,7 @@ $height: 50px;
                     transition: 0.3s all ease;
 
                     &:hover {
-                        @extend .page-numbers.active;
+                        @extend .active;
                     }
                 }
 
@@ -235,5 +262,85 @@ $height: 50px;
                 }
             }
         }
+    }
+}
+
+// 图片放大
+
+/* The Modal (background) */
+
+.modal-img {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content,
+.caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
     }
 }

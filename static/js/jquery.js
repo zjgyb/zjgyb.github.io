@@ -12,4 +12,16 @@ $(document).ready(function() {
     }
     const CONTENT_LEN = 50;
     cutCon('.card_title', CONTENT_LEN);
+
+    // 图片放大
+    const modal = document.getElementsByClassName('model-img');
+    const img = document.getElementsByClassName('card-img-top');
+    $('.card-img-top').on('click', function() {
+        const modal = $(this).next();
+        modal.css('display', 'block');
+        $(this).next().find('img')[0].src = this.src;
+        $(this).next().find('span')[0].onclick = function() {
+             modal.css('display', 'none');
+        }
+    });
 });

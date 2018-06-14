@@ -1,20 +1,17 @@
 ---
 layout: default
-title: nicegong的博客
+title: Front-end
 ---
 
-{% for post in paginator.posts %}
+
+{% for post in site.categories.front-end %}
 <div class="col-12 col-sm-6 col-xl-4">
     <div class="card">
         {% if post.img %}
-            <img class="card-img-top" src="{{ site.url }}/{{ post.img }}" width="100%" />  
+        <img class="card-img-top" src="{{ site.url }}/{{ post.img }}" width="100%" /> 
         {% else %}
-            <img class="img-fluid card-img-top" src="{{ site.url }}/{{ site.article-img }}" width="100%" alt={{ post.title }} />
+        <img class="img-fluid card-img-top" src="{{ site.url }}/{{ site.article-img }}" width="100%" /> 
         {% endif %}
-        <div class="modal-img">
-            <span class="close">&times;</span>
-            <img class="modal-content">
-        </div>
         <div class="card-body">
             <span>by nicegong {{ post.data | remove: '+0800' }}</span>
             <a href="{{ post.url }}" class="article_link">
@@ -24,6 +21,5 @@ title: nicegong的博客
             <p class="card_categories">tags: {{ post.tags }}</p>
         </div>
     </div>
-   
 </div>
 {% endfor %}
