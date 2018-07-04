@@ -13,6 +13,7 @@ github_username:  zjgyb
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 # theme: minima
 plugins:
   - jekyll-feed
