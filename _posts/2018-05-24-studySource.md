@@ -14,3 +14,4 @@ tags: resourse
 * [mysql的关于5.7.20安装以及配置](https://blog.csdn.net/qingyuwp/article/details/78706904)
 * [全栈工程师指南](https://growth.phodal.com/)
 * [node学习笔记](https://github.com/chyingp/nodejs-learning-guide/blob/master/README.md)
+* [javascript入门](https://wangdoc.com/javascript/index.html)
