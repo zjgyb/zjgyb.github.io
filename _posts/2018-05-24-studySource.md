@@ -13,5 +13,6 @@ tags: resourse
 * [markdown学习](http://xianbai.me/learn-md/index.html)
 * [mysql的关于5.7.20安装以及配置](https://blog.csdn.net/qingyuwp/article/details/78706904)
 * [全栈工程师指南](https://growth.phodal.com/)
-* [node学习笔记](https://github.com/chyingp/nodejs-learning-guide/blob/master/README.md)
+* [node学习笔记](https://github.com/chyingp/nodejs-learning-guide/blob/master/README.md)e
 * [javascript入门](https://wangdoc.com/javascript/index.html)
+* [京东代码规范](https://guide.aotu.io/index.html)
