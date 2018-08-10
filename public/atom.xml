@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>nicegong&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://zjgyb.github.io/"/>
+  <updated>2018-08-10T03:57:13.957Z</updated>
+  <id>http://zjgyb.github.io/</id>
+  
+  <author>
+    <name>nicegong</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git的使用</title>
+    <link href="http://zjgyb.github.io/2018/08/10/git/"/>
+    <id>http://zjgyb.github.io/2018/08/10/git/</id>
+    <published>2018-08-10T03:59:20.714Z</published>
+    <updated>2018-08-10T03:57:13.957Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="从master分支创建dev分支并切换到dev分支"><a href="#从master分支创建dev分支并切换到dev分支" class="headerlink" title="从master分支创建dev分支并切换到dev分支"></a>从master分支创建dev分支并切换到dev分支</h2><a id="more"></a><ul><li>git checkout master</li><li>git checkout -b dev 相当于以下两条命令</li><li>===</li><li>git brach dev</li><li>git checkout dev</li></ul><h2 id="查看本地分支-表示当前分支-git-branch"><a href="#查看本地分支-表示当前分支-git-branch" class="headerlink" title="查看本地分支 *表示当前分支 git branch"></a>查看本地分支 *表示当前分支 <code>git branch</code></h2><h2 id="查看远程全部分支-白色本地存在，红色本地不存在-git-branch-a"><a href="#查看远程全部分支-白色本地存在，红色本地不存在-git-branch-a" class="headerlink" title="查看远程全部分支 白色本地存在，红色本地不存在 git branch -a"></a>查看远程全部分支 白色本地存在，红色本地不存在 <code>git branch -a</code></h2><h2 id="修改代码、提交代码"><a href="#修改代码、提交代码" class="headerlink" title="修改代码、提交代码"></a>修改代码、提交代码</h2><ul><li>git add .</li><li>git commit -m “some messages”</li></ul><p>{: .custom-block.warning }<br>-m后面输入的是本次提交的说明</p><h2 id="分支合并-将dev合并到master"><a href="#分支合并-将dev合并到master" class="headerlink" title="分支合并(将dev合并到master)"></a>分支合并(将dev合并到master)</h2><p>{: .custom-block.tip }</p><ul><li>git checkout master</li><li>git merge dev</li></ul><h2 id="合并完成后删除分支-git-branch-d-dev"><a href="#合并完成后删除分支-git-branch-d-dev" class="headerlink" title="合并完成后删除分支 git branch -d dev"></a>合并完成后删除分支 <code>git branch -d dev</code></h2><h2 id="回退"><a href="#回退" class="headerlink" title="回退"></a>回退</h2><ul><li>撤销<code>git status</code>命令<code>git reset HEAD filename</code></li><li>回退上一版本 <code>git reset --hard HEAD</code></li><li>回退指定版本 <code>git reset --hard 版本号</code></li></ul><h2 id="查看以往版本号-本地-git-reflog"><a href="#查看以往版本号-本地-git-reflog" class="headerlink" title="查看以往版本号(本地) git reflog"></a>查看以往版本号(本地) <code>git reflog</code></h2><h2 id="查看各版本号及信息-个人和他人-git-log"><a href="#查看各版本号及信息-个人和他人-git-log" class="headerlink" title="查看各版本号及信息(个人和他人)git log"></a>查看各版本号及信息(个人和他人)<code>git log</code></h2><ul><li>git log命令显示从最近到最远的提交日志</li><li>如果看着太繁琐，可以使用git log --pretty=online</li></ul><h2 id="撤销修改-在git-commit-m前git-checkout-filename"><a href="#撤销修改-在git-commit-m前git-checkout-filename" class="headerlink" title="撤销修改 在git commit -m前git checkout -- filename"></a>撤销修改 在<code>git commit -m</code>前<code>git checkout -- filename</code></h2><h2 id="对于已经push的版本回退"><a href="#对于已经push的版本回退" class="headerlink" title="对于已经push的版本回退"></a>对于已经push的版本回退</h2><ul><li>git reset –hard 版本号</li><li>git push -f origin dev</li></ul><h2 id="本地同步远程的分支git-fetch-origin-p"><a href="#本地同步远程的分支git-fetch-origin-p" class="headerlink" title="本地同步远程的分支git fetch origin -p"></a>本地同步远程的分支<code>git fetch origin -p</code></h2><h2 id="查看文件是否被修改git-status"><a href="#查看文件是否被修改git-status" class="headerlink" title="查看文件是否被修改git status"></a>查看文件是否被修改<code>git status</code></h2><h2 id="查看文件修改内容git-diff-filename"><a href="#查看文件修改内容git-diff-filename" class="headerlink" title="查看文件修改内容git diff filename"></a>查看文件修改内容<code>git diff filename</code></h2><h2 id="把本地的仓库推到空的github仓库上"><a href="#把本地的仓库推到空的github仓库上" class="headerlink" title="把本地的仓库推到空的github仓库上"></a>把本地的仓库推到空的github仓库上</h2><ul><li>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:githubname/repositoriesname.git</li><li>// 第一次提交时需要加上<code>-u</code></li><li>git push -u origin master</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;从master分支创建dev分支并切换到dev分支&quot;&gt;&lt;a href=&quot;#从master分支创建dev分支并切换到dev分支&quot; class=&quot;headerlink&quot; title=&quot;从master分支创建dev分支并切换到dev分支&quot;&gt;&lt;/a&gt;从master分支创建dev分支并切换到dev分支&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="git" scheme="http://zjgyb.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://zjgyb.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代码压缩</title>
+    <link href="http://zjgyb.github.io/2018/08/10/%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9/"/>
+    <id>http://zjgyb.github.io/2018/08/10/代码压缩/</id>
+    <published>2018-08-10T03:54:45.126Z</published>
+    <updated>2018-08-10T03:57:51.227Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="通过node实现代码压缩"><a href="#通过node实现代码压缩" class="headerlink" title="通过node实现代码压缩"></a>通过node实现代码压缩</h2><ol><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装nodejs</a></li><li>接下来使用<code>npm init -y</code>生成一个默认的package.json文件</li><li><code>npm install uglify-es</code>下载包</li><li>最后使用<code>npx uglifyjs -c -m -o finename.min.js -- filename.js</code></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;通过node实现代码压缩&quot;&gt;&lt;a href=&quot;#通过node实现代码压缩&quot; class=&quot;headerlink&quot; title=&quot;通过node实现代码压缩&quot;&gt;&lt;/a&gt;通过node实现代码压缩&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.
+      
+    
+    </summary>
+    
+      <category term="front-end" scheme="http://zjgyb.github.io/categories/front-end/"/>
+    
+    
+      <category term="js" scheme="http://zjgyb.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://zjgyb.github.io/2018/08/10/hello-world/"/>
+    <id>http://zjgyb.github.io/2018/08/10/hello-world/</id>
+    <published>2018-08-10T03:54:45.125Z</published>
+    <updated>2018-08-10T01:06:40.774Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://zjgyb.github.io/categories/Hexo/"/>
+    
+    
+  </entry>
+  
+</feed>
