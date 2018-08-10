@@ -80,7 +80,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/zjgyb/zjgyb.github.io.git
+  repo: git@github.com:zjgyb/zjgyb.github.io.git
   branch: master
 
 # 文章末尾添加“本文结束”标记
