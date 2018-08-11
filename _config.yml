@@ -87,14 +87,6 @@ deploy:
 passage_end_tag:
   enabled: true
   
-# menu:
-#   home: /
-#   archives: /archives
-#   #about: /about
-#   #categories: /categories
-#   tags: /tags
-#   categories: /categories
-#   #commonweal: /404.html
 
 # sidebar:
 #   position: left
