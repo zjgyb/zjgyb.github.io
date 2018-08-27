@@ -52,6 +52,13 @@ input(
   checked
 )
 ```
+### 变量（有多个class）
+``` pug
+- var classes = ["header-box", "wraper"]
+div(class=classes) somecode
+// 或者直接写入
+div(class="header-box wraper")
+```
 ### 文件的引用
 ``` pug
 script(src="/assets/jquery.min.js")
@@ -111,4 +118,31 @@ ul
 ul
   while n < 4
     li= n++
+```
+### 不同文件的引用
+``` pug
+//- layout.pug
+doctype html
+html
+   head
+      title= title
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      block head
+   body
+
+   include header.pug
+
+   block body
+
+   include footer.pug
+   
+```
+``` pug
+//- layout-home.pug
+extends ./layout.pug
+
+block head
+    link(rel="stylesheet" href="/home/main.css")
+block body
+  div hello-world
 ```

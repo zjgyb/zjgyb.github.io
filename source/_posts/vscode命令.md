@@ -14,6 +14,7 @@ tags:
 * `Ctrl+Shift+N` 打开一个新窗口
 * `Ctrl+Shift+W` 关闭当前窗口
 * `Ctrl+K Ctrl+S` 自定义命令
+* `Ctrl + B` 折叠资源管理器
 
 ### 常用编辑快捷键
 * `Ctrl+↑/↓` 把该行代码与上行或下行代码互换
