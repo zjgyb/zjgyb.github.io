@@ -1,98 +1,133 @@
 ---
-layout: '[post]'
+layout: "[post]"
 title: canvas基础
 date: 2018-08-27 10:28:49
 categories: 前端
-tags:  
-- js
-- API
-- html5
-- canvas
+tags:
+  - js
+  - API
+  - html5
+  - canvas
 copyright: true
 keywords: canvas html5 js 前端 canvas基础
 description: canvas这个元素负责在页面中设定一个区域，然后通过JS动态的在这个区域中绘制图形。
 ---
 
-## 概述——什么是Canvas
-> canvas这个元素负责在页面中设定一个区域，然后通过JS动态的在这个区域中绘制图形。
+## 概述——什么是 Canvas
+
+> canvas 这个元素负责在页面中设定一个区域，然后通过 JS 动态的在这个区域中绘制图形。
 
 ## 语法
+
 ### 基本介绍
+
 一般前两个都是要画元素的开始坐标，后两个一般是要画元素本身的配置
+
 ### strokeRect()
+
 绘制一个无填充矩形
-``` js
-ctx.strokeRect(20,20,150,100);
+
+```js
+ctx.strokeRect(20, 20, 150, 100);
 // 等同于
-ctx.rect(20,20,150,100);
+ctx.rect(20, 20, 150, 100);
 ctx.stroke();
 ```
+
 ### fillRect()
+
 绘制一个填充矩形
-``` js
-ctx.fillRect(20,20,150,100);
+
+```js
+ctx.fillRect(20, 20, 150, 100);
 // 等同于
-ctx.rect(20,20,150,100);
+ctx.rect(20, 20, 150, 100);
 ctx.fill();
 ```
+
 ### beginPath()
+
 起始一条路径或者重置当前路径
-``` js
+
+```js
 ctx.beginPath();
 ```
+
 ### translate();
+
 改变画布的(0, 0)点也就是原点
-``` js
+
+```js
 ctx.translate(20, 30);
 ```
-### moveTo()和lineTo()
+
+### moveTo()和 lineTo()
+
 前一个是把路径移动到指定点，后一个是添加一个新点，两者往往一起使用
-``` js
-ctx.moveTo(10,10);
-ctx.lineTo(50,50);
+
+```js
+ctx.moveTo(10, 10);
+ctx.lineTo(50, 50);
 ```
+
 ### arc()
+
 画圆的基本语法
-``` js
- // 最后一个参数为可选参数，默认false为逆时针
-ctx.arc(100,75,50,0,2*Math.PI, false);
+
+```js
+// 最后一个参数为可选参数，默认false为逆时针
+ctx.arc(100, 75, 50, 0, 2 * Math.PI, false);
 ```
+
 ### rotate()
+
 旋转的基本语法
-``` js
-ctx.rotate(20*Math.PI/180);
+
+```js
+ctx.rotate((20 * Math.PI) / 180);
 ```
+
 ### clearRect()
+
 清除画布的基本语法
-``` js
-ctx.clearRect(20,20,100,50);
+
+```js
+ctx.clearRect(20, 20, 100, 50);
 ```
-## canvas的使用
-### 在html页面插入canvas
-``` html
+
+## canvas 的使用
+
+### 在 html 页面插入 canvas
+
+```html
 <canvas id="content" width="200" height="200"></canvas>
 ```
+
 ### 插入一张图片
-``` js
-const content = document.querySelector('#content');
-let ctx = content.getContext('2d');
+
+```js
+const content = document.querySelector("#content");
+let ctx = content.getContext("2d");
 let image = new Image();
 image.onload = function() {
-    ctx.drawImage(image, 0, 0, content.width, content.height);
-    // 加入文字渲染
-    ctx.font = '36pt Impact';
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#fff';
-    ctx.fillText('This is a pug', content.width / 2, 50);
-    ctx.strokeStyle = '#000';
-    ctx.lineWidth = 3;
-    ctx.strokeText('This is a pug', content.width / 2, 50);
-}
+  ctx.drawImage(image, 0, 0, content.width, content.height);
+  // 加入文字渲染
+  ctx.font = "36pt Impact";
+  ctx.textAlign = "center";
+  ctx.fillStyle = "#fff";
+  ctx.fillText("This is a pug", content.width / 2, 50);
+  ctx.strokeStyle = "#000";
+  ctx.lineWidth = 3;
+  ctx.strokeText("This is a pug", content.width / 2, 50);
+};
 
-image.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopszucht-vom-maegdebrunnen.jpg';
+image.src =
+  "https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopszucht-vom-maegdebrunnen.jpg";
 ```
+
 效果图
-<canvas id="con" width="300" height="300"></canvas>
+<canvas id="con" width="250" height="250"></canvas>
+
 <script>
 (function() {
     const content = document.querySelector('#con');
@@ -117,9 +152,11 @@ image.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopsz
 </script>
 
 ### 绘制一个时钟
+
 效果图
 
 <canvas id="clock" width="200" height="200"></canvas>
+
 <script>
 (function() {
     let clock = document.querySelector('#clock');
@@ -158,8 +195,8 @@ image.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopsz
             } else {
                 ctx.fillStyle = '#eee';
                 ctx.arc(x, y, 2, 0, 2 * Math.PI);
-            }        
-            
+            }
+
             ctx.fill();
         }
 
@@ -235,9 +272,10 @@ image.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopsz
 })();
 </script>
 
-[时钟源代码](https://github.com/zjgyb/js-study/blob/master/study/canvas_time.html '时钟源代码')
+[时钟源代码](https://github.com/zjgyb/js-study/blob/master/study/canvas_time.html "时钟源代码")
 
 ## 参考教程
-+ [优达学城](https://classroom.udacity.com/courses/ud292 '优达学城')
-+ [慕课网](https://www.imooc.com/learn/612 '慕课网')
-+ [W3school](http://www.w3school.com.cn/tags/html_ref_canvas.asp 'W3school')
+
+- [优达学城](https://classroom.udacity.com/courses/ud292 "优达学城")
+- [慕课网](https://www.imooc.com/learn/612 "慕课网")
+- [W3school](http://www.w3school.com.cn/tags/html_ref_canvas.asp "W3school")
