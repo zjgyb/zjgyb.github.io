@@ -164,7 +164,7 @@ new Text(
 ```
 
 ## 全部代码
-[传送门](https://github.com/zjgyb/flutter_study)
+[传送门](https://github.com/zjgyb/flutter_study/tree/master/flutter_oneday)
 
 ## 参考资源
 - [flutter官网](https://flutter.io)
@@ -172,4 +172,4 @@ new Text(
 - [优达学城课程](https://classroom.udacity.com/courses/ud905/lessons/92a39eec-0c04-4d98-b47f-c884b9cd5a3b/concepts/434cfc1b-b9d4-4ff9-a723-38b4e5cfaae4)
 
 ## 结束语
-flutter我也是才刚开始学习，如果有错误之处还希望读者斧正。感谢阅读！
+flutter我也是才刚开始学习，如果有错误之处还希望读者斧正。在[flutter学习第二天](https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9.html)中，我将基于这个例子的基础上继续学习。感谢阅读！
