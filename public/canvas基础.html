@@ -1,0 +1,170 @@
+<!DOCTYPE html><html class="theme-next pisces use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4"><link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222"><meta name="keywords" content="canvas html5 js 前端 canvas基础"><link rel="alternate" href="/atom.xml" title="nicegong's blog" type="application/atom+xml"><meta name="description" content="canvas这个元素负责在页面中设定一个区域，然后通过JS动态的在这个区域中绘制图形。"><meta name="keywords" content="canvas html5 js 前端 canvas基础"><meta property="og:type" content="article"><meta property="og:title" content="canvas基础"><meta property="og:url" content="https://zjgyb.github.io/canvas基础.html"><meta property="og:site_name" content="nicegong&#39;s blog"><meta property="og:description" content="canvas这个元素负责在页面中设定一个区域，然后通过JS动态的在这个区域中绘制图形。"><meta property="og:locale" content="zh-Hans"><meta property="og:updated_time" content="2018-09-11T14:27:50.792Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="canvas基础"><meta name="twitter:description" content="canvas这个元素负责在页面中设定一个区域，然后通过JS动态的在这个区域中绘制图形。"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Pisces",version:"5.1.4",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!1,onmobile:!1},fancybox:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}},emojis:{className:"github-emoji"}}</script><link rel="canonical" href="https://zjgyb.github.io/canvas基础.html"><title>canvas基础 | nicegong's blog</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div> <a href="https://github.com/zjgyb"><img style="position:absolute;top:0;right:0;border:0" src="images/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">nicegong's blog</span><span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description">zjgyb</h1></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br> 关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br> 分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> 归档</a></li></ul></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://zjgyb.github.io/canvas基础.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="nicegong"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="nicegong's blog"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">canvas基础</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-27T10:28:49+08:00">2018-08-27</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span><a href="/canvas基础.html#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/canvas基础.html" itemprop="commentCount"></span></a></span> <span class="post-meta-divider">|</span><span class="page-pv"><i class="fa fa-file-o"></i> 浏览<span class="busuanzi-value" id="busuanzi_value_page_pv"></span> 次</span><div class="post-wordcount"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span> <span class="post-meta-item-text">字数统计&#58;</span> <span title="字数统计">446</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i></span> <span class="post-meta-item-text">阅读时长 &asymp;</span> <span title="阅读时长">2</span></div><div class="post-description"> canvas这个元素负责在页面中设定一个区域，然后通过JS动态的在这个区域中绘制图形。</div></div></header><div class="post-body" itemprop="articleBody"><h2 id="&#x6982;&#x8FF0;&#x2014;&#x2014;&#x4EC0;&#x4E48;&#x662F;-Canvas"><a href="#&#x6982;&#x8FF0;&#x2014;&#x2014;&#x4EC0;&#x4E48;&#x662F;-Canvas" class="headerlink" title="&#x6982;&#x8FF0;&#x2014;&#x2014;&#x4EC0;&#x4E48;&#x662F; Canvas"></a>&#x6982;&#x8FF0;&#x2014;&#x2014;&#x4EC0;&#x4E48;&#x662F; Canvas</h2><blockquote><p>canvas &#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x8D1F;&#x8D23;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7; JS &#x52A8;&#x6001;&#x7684;&#x5728;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x4E2D;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#x3002;</p></blockquote><h2 id="&#x8BED;&#x6CD5;"><a href="#&#x8BED;&#x6CD5;" class="headerlink" title="&#x8BED;&#x6CD5;"></a>&#x8BED;&#x6CD5;</h2><h3 id="&#x57FA;&#x672C;&#x4ECB;&#x7ECD;"><a href="#&#x57FA;&#x672C;&#x4ECB;&#x7ECD;" class="headerlink" title="&#x57FA;&#x672C;&#x4ECB;&#x7ECD;"></a>&#x57FA;&#x672C;&#x4ECB;&#x7ECD;</h3><p>&#x4E00;&#x822C;&#x524D;&#x4E24;&#x4E2A;&#x90FD;&#x662F;&#x8981;&#x753B;&#x5143;&#x7D20;&#x7684;&#x5F00;&#x59CB;&#x5750;&#x6807;&#xFF0C;&#x540E;&#x4E24;&#x4E2A;&#x4E00;&#x822C;&#x662F;&#x8981;&#x753B;&#x5143;&#x7D20;&#x672C;&#x8EAB;&#x7684;&#x914D;&#x7F6E;</p><h3 id="strokeRect"><a href="#strokeRect" class="headerlink" title="strokeRect()"></a>strokeRect()</h3><p>&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x65E0;&#x586B;&#x5145;&#x77E9;&#x5F62;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ctx.strokeRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">150</span>, <span class="number">100</span>);</span><br><span class="line"><span class="comment">// &#x7B49;&#x540C;&#x4E8E;</span></span><br><span class="line">ctx.rect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">150</span>, <span class="number">100</span>);</span><br><span class="line">ctx.stroke();</span><br></pre></td></tr></tbody></table></figure><h3 id="fillRect"><a href="#fillRect" class="headerlink" title="fillRect()"></a>fillRect()</h3><p>&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x586B;&#x5145;&#x77E9;&#x5F62;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ctx.fillRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">150</span>, <span class="number">100</span>);</span><br><span class="line"><span class="comment">// &#x7B49;&#x540C;&#x4E8E;</span></span><br><span class="line">ctx.rect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">150</span>, <span class="number">100</span>);</span><br><span class="line">ctx.fill();</span><br></pre></td></tr></tbody></table></figure><h3 id="beginPath"><a href="#beginPath" class="headerlink" title="beginPath()"></a>beginPath()</h3><p>&#x8D77;&#x59CB;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x6216;&#x8005;&#x91CD;&#x7F6E;&#x5F53;&#x524D;&#x8DEF;&#x5F84;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctx.beginPath();</span><br></pre></td></tr></tbody></table></figure><h3 id="translate"><a href="#translate" class="headerlink" title="translate();"></a>translate();</h3><p>&#x6539;&#x53D8;&#x753B;&#x5E03;&#x7684;(0, 0)&#x70B9;&#x4E5F;&#x5C31;&#x662F;&#x539F;&#x70B9;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctx.translate(<span class="number">20</span>, <span class="number">30</span>);</span><br></pre></td></tr></tbody></table></figure><h3 id="moveTo-&#x548C;-lineTo"><a href="#moveTo-&#x548C;-lineTo" class="headerlink" title="moveTo()&#x548C; lineTo()"></a>moveTo()&#x548C; lineTo()</h3><p>&#x524D;&#x4E00;&#x4E2A;&#x662F;&#x628A;&#x8DEF;&#x5F84;&#x79FB;&#x52A8;&#x5230;&#x6307;&#x5B9A;&#x70B9;&#xFF0C;&#x540E;&#x4E00;&#x4E2A;&#x662F;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x70B9;&#xFF0C;&#x4E24;&#x8005;&#x5F80;&#x5F80;&#x4E00;&#x8D77;&#x4F7F;&#x7528;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ctx.moveTo(<span class="number">10</span>, <span class="number">10</span>);</span><br><span class="line">ctx.lineTo(<span class="number">50</span>, <span class="number">50</span>);</span><br></pre></td></tr></tbody></table></figure><h3 id="arc"><a href="#arc" class="headerlink" title="arc()"></a>arc()</h3><p>&#x753B;&#x5706;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;false&#x4E3A;&#x9006;&#x65F6;&#x9488;</span></span><br><span class="line">ctx.arc(<span class="number">100</span>, <span class="number">75</span>, <span class="number">50</span>, <span class="number">0</span>, <span class="number">2</span> * <span class="built_in">Math</span>.PI, <span class="literal">false</span>);</span><br></pre></td></tr></tbody></table></figure><h3 id="rotate"><a href="#rotate" class="headerlink" title="rotate()"></a>rotate()</h3><p>&#x65CB;&#x8F6C;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctx.rotate((<span class="number">20</span> * <span class="built_in">Math</span>.PI) / <span class="number">180</span>);</span><br></pre></td></tr></tbody></table></figure><h3 id="clearRect"><a href="#clearRect" class="headerlink" title="clearRect()"></a>clearRect()</h3><p>&#x6E05;&#x9664;&#x753B;&#x5E03;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;</p><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctx.clearRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">100</span>, <span class="number">50</span>);</span><br></pre></td></tr></tbody></table></figure><h2 id="canvas-&#x7684;&#x4F7F;&#x7528;"><a href="#canvas-&#x7684;&#x4F7F;&#x7528;" class="headerlink" title="canvas &#x7684;&#x4F7F;&#x7528;"></a>canvas &#x7684;&#x4F7F;&#x7528;</h2><h3 id="&#x5728;-html-&#x9875;&#x9762;&#x63D2;&#x5165;-canvas"><a href="#&#x5728;-html-&#x9875;&#x9762;&#x63D2;&#x5165;-canvas" class="headerlink" title="&#x5728; html &#x9875;&#x9762;&#x63D2;&#x5165; canvas"></a>&#x5728; html &#x9875;&#x9762;&#x63D2;&#x5165; canvas</h3><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">&quot;content&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h3 id="&#x63D2;&#x5165;&#x4E00;&#x5F20;&#x56FE;&#x7247;"><a href="#&#x63D2;&#x5165;&#x4E00;&#x5F20;&#x56FE;&#x7247;" class="headerlink" title="&#x63D2;&#x5165;&#x4E00;&#x5F20;&#x56FE;&#x7247;"></a>&#x63D2;&#x5165;&#x4E00;&#x5F20;&#x56FE;&#x7247;</h3><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> content = <span class="built_in">document</span>.querySelector(<span class="string">&quot;#content&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> ctx = content.getContext(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> image = <span class="keyword">new</span> Image();</span><br><span class="line">image.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{</span><br><span class="line">  ctx.drawImage(image, <span class="number">0</span>, <span class="number">0</span>, content.width, content.height);</span><br><span class="line">  <span class="comment">// &#x52A0;&#x5165;&#x6587;&#x5B57;&#x6E32;&#x67D3;</span></span><br><span class="line">  ctx.font = <span class="string">&quot;36pt Impact&quot;</span>;</span><br><span class="line">  ctx.textAlign = <span class="string">&quot;center&quot;</span>;</span><br><span class="line">  ctx.fillStyle = <span class="string">&quot;#fff&quot;</span>;</span><br><span class="line">  ctx.fillText(<span class="string">&quot;This is a pug&quot;</span>, content.width / <span class="number">2</span>, <span class="number">50</span>);</span><br><span class="line">  ctx.strokeStyle = <span class="string">&quot;#000&quot;</span>;</span><br><span class="line">  ctx.lineWidth = <span class="number">3</span>;</span><br><span class="line">  ctx.strokeText(<span class="string">&quot;This is a pug&quot;</span>, content.width / <span class="number">2</span>, <span class="number">50</span>);</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line">image.src =</span><br><span class="line">  <span class="string">&quot;https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopszucht-vom-maegdebrunnen.jpg&quot;</span>;</span><br></pre></td></tr></tbody></table></figure><p>&#x6548;&#x679C;&#x56FE;</p><canvas id="con" width="250" height="250"></canvas><script>
+(function() {
+    const content = document.querySelector('#con');
+    let ctx = content.getContext('2d');
+    let image = new Image();
+    image.onload = function() {
+        ctx.drawImage(image, 0, 0, content.width, content.height);
+
+        // 加入文字渲染
+        ctx.font = '36pt Impact';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#fff';
+        ctx.fillText('This is a pug', content.width / 2, 50);
+        ctx.strokeStyle = '#000';
+        ctx.lineWidth = 3;
+        ctx.strokeText('This is a pug', content.width / 2, 50);
+    }
+
+    image.src = 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Mops-duke-mopszucht-vom-maegdebrunnen.jpg';
+
+})();
+</script><h3 id="&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x65F6;&#x949F;"><a href="#&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x65F6;&#x949F;" class="headerlink" title="&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x65F6;&#x949F;"></a>&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x65F6;&#x949F;</h3><p>&#x6548;&#x679C;&#x56FE;</p><canvas id="clock" width="200" height="200"></canvas><script>
+(function() {
+    let clock = document.querySelector('#clock');
+    let ctx = clock.getContext('2d');
+    let r = ctx.canvas.width / 2;
+
+    function drawclock() {
+        ctx.beginPath();
+        ctx.translate(r, r);
+        ctx.lineWidth = 10;
+        ctx.arc(0, 0, r - 5, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        let font = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2];
+        let rad = 2 * Math.PI / 12;
+        let fontR = r - 30;
+        ctx.font = "18px Arial"
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        font.forEach((num, i) => {
+            let x = fontR * Math.cos(i * rad);
+            let y = fontR * Math.sin(i * rad);
+            ctx.fillText(num, x, y);
+        });
+
+        // 画外围小圆
+        let radForSixty = 2 * Math.PI / 60;
+        let smallRad = r - 15;
+        for (let i = 0; i < 60; i++) {
+            ctx.beginPath();
+            let x = smallRad * Math.cos(i * radForSixty);
+            let y = smallRad * Math.sin(i * radForSixty);
+            if(i % 5 === 0) {
+                ctx.fillStyle = '#000';
+                ctx.arc(x, y, 2, 0, 2 * Math.PI);
+            } else {
+                ctx.fillStyle = '#eee';
+                ctx.arc(x, y, 2, 0, 2 * Math.PI);
+            }
+
+            ctx.fill();
+        }
+
+    };
+
+    // 画时针
+    function drawHour(hour, min) {
+        ctx.save();
+        let hourRad = hour * Math.PI / 6;
+        let minRad = min * Math.PI / 360;
+        ctx.rotate(hourRad + minRad);
+        let len = r / 2 - 20;
+        ctx.beginPath();
+        ctx.lineCap = "round";
+        ctx.moveTo(0, 10);
+        ctx.lineTo(0, -len);
+        ctx.stroke();
+        ctx.restore();
+    }
+
+    function drawMinute(min) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.rotate(min * 2 * Math.PI / 60);
+        ctx.lineWidth = 5;
+        let len = r - 45;
+        ctx.beginPath();
+        ctx.lineCap = "round";
+        ctx.moveTo(0, 10);
+        ctx.lineTo(0, -len);
+        ctx.stroke();
+        ctx.restore();
+    }
+
+    function drawSecond(second) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.rotate(second * 2 * Math.PI / 60);
+        ctx.fillStyle = 'red';
+        let len = r - 20;
+        ctx.lineCap = "round";
+        ctx.moveTo(-2, 10);
+        ctx.lineTo(-1, -len);
+        ctx.lineTo(1, -len);
+        ctx.lineTo(2, 10);
+        ctx.fill();
+
+        // 画中心小圆
+        ctx.beginPath();
+        ctx.fillStyle = '#fff';
+        ctx.arc(0, 0, 5, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.restore();
+    }
+
+    setInterval(() => {
+        ctx.save();
+        ctx.clearRect(0, 0, 2* r, 2 * r);
+        drawclock();
+        let date = new Date();
+        let hour = date.getHours();
+        if(hour - 12 > 0) {
+            hour -= 12;
+        }
+        let minute = date.getMinutes();
+        let seconds = date.getSeconds();
+        drawHour(hour, minute);
+        drawMinute(minute);
+        drawSecond(seconds);
+        ctx.restore();
+    }, 1000);
+
+})();
+</script><p><a href="https://github.com/zjgyb/js-study/blob/master/study/canvas_time.html" title="&#x65F6;&#x949F;&#x6E90;&#x4EE3;&#x7801;" target="_blank" rel="noopener">&#x65F6;&#x949F;&#x6E90;&#x4EE3;&#x7801;</a></p><h2 id="&#x53C2;&#x8003;&#x6559;&#x7A0B;"><a href="#&#x53C2;&#x8003;&#x6559;&#x7A0B;" class="headerlink" title="&#x53C2;&#x8003;&#x6559;&#x7A0B;"></a>&#x53C2;&#x8003;&#x6559;&#x7A0B;</h2><ul><li><a href="https://classroom.udacity.com/courses/ud292" title="&#x4F18;&#x8FBE;&#x5B66;&#x57CE;" target="_blank" rel="noopener">&#x4F18;&#x8FBE;&#x5B66;&#x57CE;</a></li><li><a href="https://www.imooc.com/learn/612" title="&#x6155;&#x8BFE;&#x7F51;" target="_blank" rel="noopener">&#x6155;&#x8BFE;&#x7F51;</a></li><li><a href="http://www.w3school.com.cn/tags/html_ref_canvas.asp" title="W3school" target="_blank" rel="noopener">W3school</a></li></ul><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script></div><div><div><div style="text-align:center;color:#ccc;font-size:14px">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div></div></div><div><div class="my_post_copyright"><script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script><script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script><script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><p><span>本文标题:</span><a href="/canvas基础.html">canvas基础</a></p><p><span>文章作者:</span><a href="/" title="访问 nicegong 的个人博客">nicegong</a></p><p><span>发布时间:</span>2018年08月27日 - 10:08</p><p><span>最后更新:</span>2018年09月11日 - 22:09</p><p><span>原始链接:</span><a href="/canvas基础.html" title="canvas基础">https://zjgyb.github.io/canvas基础.html</a><span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://zjgyb.github.io/canvas基础.html" aria-label="复制成功！"></i></span></p><p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p></div><script>var clipboard=new Clipboard(".fa-clipboard");$(".fa-clipboard").click(function(){clipboard.on("success",function(){swal({title:"",text:"复制成功",icon:"success",showConfirmButton:!0})})})</script></div><footer class="post-footer"><div class="post-tags"><a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a><a href="/tags/API/" rel="tag"><i class="fa fa-tag"></i> API</a><a href="/tags/html5/" rel="tag"><i class="fa fa-tag"></i> html5</a><a href="/tags/canvas/" rel="tag"><i class="fa fa-tag"></i> canvas</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/Pug语法小结.html" rel="next" title="Pug语法小结"><i class="fa fa-chevron-left"></i> Pug语法小结</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/预加载.html" rel="prev" title="预加载">预加载<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"></div></div></div><div class="comments" id="comments"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><p class="site-author-name" itemprop="name">nicegong</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">19</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">4</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">23</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a rel="external nofollow" href="https://github.com/zjgyb" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a rel="external nofollow" href="https://twitter.com/lxgyb" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i> Twitter</a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> 推荐阅读</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"> <a href="http://www.ruanyifeng.com/blog/" title="阮一峰" rel="external nofollow" target="_blank">阮一峰</a></li></ul></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述——什么是-Canvas"><span class="nav-number">1.</span> <span class="nav-text">概述——什么是 Canvas</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">2.</span> <span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本介绍"><span class="nav-number">2.1.</span> <span class="nav-text">基本介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#strokeRect"><span class="nav-number">2.2.</span> <span class="nav-text">strokeRect()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fillRect"><span class="nav-number">2.3.</span> <span class="nav-text">fillRect()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#beginPath"><span class="nav-number">2.4.</span> <span class="nav-text">beginPath()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#translate"><span class="nav-number">2.5.</span> <span class="nav-text">translate();</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#moveTo-和-lineTo"><span class="nav-number">2.6.</span> <span class="nav-text">moveTo()和 lineTo()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#arc"><span class="nav-number">2.7.</span> <span class="nav-text">arc()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rotate"><span class="nav-number">2.8.</span> <span class="nav-text">rotate()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clearRect"><span class="nav-number">2.9.</span> <span class="nav-text">clearRect()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#canvas-的使用"><span class="nav-number">3.</span> <span class="nav-text">canvas 的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在-html-页面插入-canvas"><span class="nav-number">3.1.</span> <span class="nav-text">在 html 页面插入 canvas</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入一张图片"><span class="nav-number">3.2.</span> <span class="nav-text">插入一张图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绘制一个时钟"><span class="nav-number">3.3.</span> <span class="nav-text">绘制一个时钟</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考教程"><span class="nav-number">4.</span> <span class="nav-text">参考教程</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span><span class="with-love"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">nicegong</span></div><span class="post-meta-divider"></span><div class="theme-info"><div class="powered-by"></div> <span class="post-count">博客全站共5.8k字</span></div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv"><i class="fa fa-user"></i> 访客数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人</span><span class="site-pv"><i class="fa fa-eye"></i> 总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次</span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'qzOeHVSL5KMvr5tgiCnzAIA8-gzGzoHsz',
+        appKey: 'rONYpsgFK6ApQr7pq6dbx2kR',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script></body></html>
