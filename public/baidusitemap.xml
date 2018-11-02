@@ -4,6 +4,56 @@
 
     
   <url>
+    <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89.html</loc>
+    <lastmod>2018-10-31T12:34:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>vue学习笔记（二）</title>
+        <pubTime>2018-10-31T12:30:32.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>Vue</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="Vue" url="https://zjgyb.github.io/categories/Vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9.html</loc>
+    <lastmod>2018-10-28T12:17:49.540Z</lastmod>
+    <data>
+        <display>
+        <title>flutter学习第三天</title>
+        <pubTime>2018-10-08T08:10:56.000Z</pubTime>
+        
+        <tag>flutter</tag>
+         
+        <tag>dart</tag>
+         
+        <tag>material</tag>
+         
+        <tag>login</tag>
+         
+         
+           
+             
+              <breadCrumb title="flutter" url="https://zjgyb.github.io/categories/flutter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</loc>
     <lastmod>2018-10-28T11:45:32.541Z</lastmod>
     <data>
@@ -98,32 +148,6 @@
            
              
               <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9.html</loc>
-    <lastmod>2018-10-08T08:13:16.055Z</lastmod>
-    <data>
-        <display>
-        <title>flutter学习第三天</title>
-        <pubTime>2018-10-08T08:10:56.000Z</pubTime>
-        
-        <tag>flutter</tag>
-         
-        <tag>dart</tag>
-         
-        <tag>material</tag>
-         
-        <tag>login</tag>
-         
-         
-           
-             
-              <breadCrumb title="flutter" url="https://zjgyb.github.io/categories/flutter/"/>
           
         </display>
     </data>
