@@ -1,3 +1,3 @@
+https://zjgyb.github.io/VeeValidate简单应用.html
 https://zjgyb.github.io/vue学习笔记（二）.html
 https://zjgyb.github.io/vue学习笔记.html
-https://zjgyb.github.io/函数式编程.html

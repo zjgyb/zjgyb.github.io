@@ -40,7 +40,7 @@ hexo publish [post] title
 
 ## 修改记录
 
-在`E:\git\zjgyb.github.io\themes\next\source\css\_common\components\highlight\highlight.styl`中添加了如下代码
+在`zjgyb.github.io\themes\next\source\css\_common\components\highlight\highlight.styl`中添加了如下代码
 
 ``` styl
 figcaption {
@@ -62,6 +62,9 @@ figcaption {
     }
 }
 ```
+
+
+在`zjgyb.github.io\themes\next\source\css\_common\components\sidebar\sidebar-author.styl`中修改了头像css样式
 
 ## 插入JSFiddle
 

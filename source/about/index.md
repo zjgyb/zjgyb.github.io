@@ -11,4 +11,4 @@ comments: false
 * 2016-至今 华北电力大学
 
 ## 联系方式
-* Email: zjsgyb@gamil.com
+* Email: zjsgyb@gmail.com
