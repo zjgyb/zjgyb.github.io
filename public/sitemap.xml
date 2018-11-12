@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zjgyb.github.io/vue%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97.html</loc>
+    
+    <lastmod>2018-11-08T12:19:28.073Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/about/index.html</loc>
+    
+    <lastmod>2018-11-04T07:34:29.086Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zjgyb.github.io/VeeValidate%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8.html</loc>
     
     <lastmod>2018-11-02T01:50:41.421Z</lastmod>
@@ -68,13 +82,6 @@
     <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9.html</loc>
     
     <lastmod>2018-10-04T03:14:58.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zjgyb.github.io/about/index.html</loc>
-    
-    <lastmod>2018-10-02T02:04:58.624Z</lastmod>
     
   </url>
   

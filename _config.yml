@@ -101,6 +101,7 @@ passage_end_tag:
 githubEmojis:
   enable: true
   className: github-emoji
+  inject: true
   unicode: true
   styles:
   localEmojis:

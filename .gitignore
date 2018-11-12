@@ -5,3 +5,4 @@ db.json
 node_modules/
 .deploy*/
 zjgyb.github.io/
+public/

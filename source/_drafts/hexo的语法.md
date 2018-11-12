@@ -66,6 +66,12 @@ figcaption {
 
 在`zjgyb.github.io\themes\next\source\css\_common\components\sidebar\sidebar-author.styl`中修改了头像css样式
 
+在`E:\git\zjgyb.github.io\themes\next\source\css\_common\components\post\post-expand.styl`增加了移动端适配
+
+在`E:\git\zjgyb.github.io\themes\next\source\css\_schemes\Pisces\_layout.styl`新镇了`+mobile-smallest()`这一语句
+
+在`E:\git\zjgyb.github.io\themes\next\source\css\_custom\custom.styl`新增了`@media`
+
 ## 插入JSFiddle
 
 [参考文章](http://www.missfli.com/2018/05/29/github-hexo-next-04.html)
