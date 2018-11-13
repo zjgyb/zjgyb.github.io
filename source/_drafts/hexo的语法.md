@@ -50,7 +50,8 @@ figcaption {
     line-height: 1em;
     margin-bottom: 1em;
     // from here
-    float: right;
+    position: absolute;
+    right: 0;
     color: #ccc;
     padding: 5px 10px 0;
     // to here
@@ -72,9 +73,18 @@ figcaption {
 
 在`E:\git\zjgyb.github.io\themes\next\source\css\_custom\custom.styl`新增了`@media`
 
+在`hexo/themes/next/source/css/ _custom/custom.styl`和`/themes/next/layout/ _macro/post.swig`新增了图片摘要，[参考地址](http://www.wellliu.com/2016/12/30/%E3%80%90%E8%BD%AC%E3%80%91Blog%E6%91%98%E8%A6%81%E9%85%8D%E5%9B%BE/#more)
+
 ## 插入JSFiddle
 
 [参考文章](http://www.missfli.com/2018/05/29/github-hexo-next-04.html)
+
+{% note warning %}
+放弃JSFiddle的原因是手机响应并不好，而且JSFiddle没有codepen方便
+{% endnote %}
+
+## 插入codepen
+[参考来源](https://github.com/bibixx/hexo-tag-codepen)
 
 ## 参考教程
 [hexo官方教程](https://hexo.io/zh-cn/docs/ 'hexo官方教程')

@@ -1,7 +1,13 @@
 ---
 title: vue学习笔记（三）
 tags:
+images: "/images/vue.jpeg"
 ---
+
+{% note info %}
+对于Vue的第三篇总结，主要介绍计算属性、filter、mixin
+{% endnote %}
+<!-- more -->
 
 ## 计算属性 VS 方法
 
@@ -65,4 +71,60 @@ new Vue({
 });
 ```
 
-{% jsfiddle nicegong/3z07s4xa result,html,js light 290 %}
+{% codepen LXZYNN %}
+
+## filter——过滤器
+
+能够方便的对一些值进行修改过滤，下面一例就是使标题大写，内容截取 100 字符
+
+```html html
+<div v-for="text in texts" :key="text.id" class="text">
+  <h3>{{ text.title | upperCase }}</h3>
+  <article>{{ text.body | catwords }}</article>
+</div>
+```
+
+```js js
+new Vue({
+  filters: {
+    upperCase(value) {
+      return value.toUpperCase();
+    },
+
+    catwords(value) {
+      return value.slice(0, 100) + "...";
+    }
+  }
+});
+```
+
+{% note info %}
+其实还可以使用`Vue.filter({ /* some code */ })`来表示，这里就介绍一种
+{% endnote %}
+
+{% codepen QJdEjp %}
+
+## mixin
+
+混合模式——公用方法及变量，例如：
+
+```js js
+// src/minix/blogMixins.js
+export default {
+    computed: {
+        searchBlogs() {
+            return this.blogs.filter((blog) => {
+                return blog.title.match(this.search);
+            })
+        }
+    }
+}
+```
+
+``` js js
+// src/component/MixinBlog.js
+import blogMixins from '../mixins/blogMixins';
+new Vue({
+  mixins: [ blogMixins ]
+})
+```

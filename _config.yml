@@ -4,7 +4,7 @@
 
 # Site
 title: nicegong's blog
-subtitle: zjgyb
+subtitle: 得之我幸，失之我命
 description: 这是nicegong的个人博客
 keywords: nicegong 博客 前端
 author: nicegong
@@ -106,6 +106,12 @@ githubEmojis:
   styles:
   localEmojis:
 
+codepen:
+  userId: "zjgyb"
+  theme: "33713"
+  default_tabs: "js,result"
+  height: 500
+  width: "100%"
 # sidebar:
 #   position: left
 
