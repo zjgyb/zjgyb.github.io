@@ -1,7 +1,6 @@
 ---
 title: flutter学习第二天
 copyright: true
-description: <img src="images/flutter_twoday.png" width="100%"/>
 date: 2018-10-04 11:10:12
 categories: flutter
 tags:
@@ -11,6 +10,8 @@ tags:
 keywords: flutter学习 dart material 第二天
 ---
 
+{% asset_img flutter_twoday.png %}
+<!-- more -->
 
 ## 导读
 

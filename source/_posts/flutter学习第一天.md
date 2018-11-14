@@ -1,7 +1,6 @@
 ---
 title: flutter学习第一天
 copyright: true
-description: <img src="images/flutter_logo.png" width="100%"/>
 date: 2018-10-02 10:02:22
 categories: flutter
 tags:
@@ -11,6 +10,9 @@ tags:
 keywords: flutter学习 dart material
 ---
 
+{% asset_img flutter_logo.png %}
+
+<!-- more -->
 
 ## 介绍
 

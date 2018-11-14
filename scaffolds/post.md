@@ -6,5 +6,5 @@ tags:
 copyright: true
 keywords:
 description:
-images: 
+images: {{ title }}
 ---

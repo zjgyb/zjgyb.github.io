@@ -1,8 +1,20 @@
 ---
 title: vue学习笔记（三）
+copyright: true
+images: /images/vue.jpeg
+date: 2018-11-13 20:26:42
+category: Vue
 tags:
-images: "/images/vue.jpeg"
+ - Vue
+ - 计算属性
+ - filter
+ - mixin
+ - js
+ - 前端
+keywords: Vue 计算属性 filter mixin js 前端 学习 学习笔记（三）
+description:
 ---
+
 
 {% note info %}
 对于Vue的第三篇总结，主要介绍计算属性、filter、mixin

@@ -1,495 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/vue%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97.html</loc>
-    <lastmod>2018-11-08T12:19:28.073Z</lastmod>
-    <data>
-        <display>
-        <title>vue风格指南</title>
-        <pubTime>2018-11-08T12:18:56.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>Vue</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://zjgyb.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://zjgyb.github.io/VeeValidate%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8.html</loc>
-    <lastmod>2018-11-02T01:50:41.421Z</lastmod>
-    <data>
-        <display>
-        <title>VeeValidate简单应用</title>
-        <pubTime>2018-11-02T01:48:50.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>VeeValidate</tag>
-         
-        <tag>Vue</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://zjgyb.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89.html</loc>
-    <lastmod>2018-10-31T12:34:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>vue学习笔记（二）</title>
-        <pubTime>2018-10-31T12:30:32.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>Vue</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://zjgyb.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9.html</loc>
-    <lastmod>2018-10-28T12:17:49.540Z</lastmod>
-    <data>
-        <display>
-        <title>flutter学习第三天</title>
-        <pubTime>2018-10-08T08:10:56.000Z</pubTime>
-        
-        <tag>flutter</tag>
-         
-        <tag>dart</tag>
-         
-        <tag>material</tag>
-         
-        <tag>login</tag>
-         
-         
-           
-             
-              <breadCrumb title="flutter" url="https://zjgyb.github.io/categories/flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</loc>
-    <lastmod>2018-10-28T11:45:32.541Z</lastmod>
-    <data>
-        <display>
-        <title>vue­学习笔记</title>
-        <pubTime>2018-10-28T11:44:01.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>Vue</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vue" url="https://zjgyb.github.io/categories/Vue/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B.html</loc>
-    <lastmod>2018-10-20T07:03:09.179Z</lastmod>
-    <data>
-        <display>
-        <title>函数式编程</title>
-        <pubTime>2018-10-20T07:02:34.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.html</loc>
-    <lastmod>2018-10-15T09:31:09.821Z</lastmod>
-    <data>
-        <display>
-        <title>flutter学习中遇到的问题总结</title>
-        <pubTime>2018-10-15T09:30:43.000Z</pubTime>
-        
-        <tag>flutter</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/%E4%B8%8D%E8%92%9C%E5%AD%90busuanzi%E5%A4%B1%E6%95%88.html</loc>
-    <lastmod>2018-10-13T13:29:53.172Z</lastmod>
-    <data>
-        <display>
-        <title>不蒜子busuanzi失效</title>
-        <pubTime>2018-10-13T12:37:50.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>不蒜子</tag>
-         
-        <tag>统计人数</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zjgyb.github.io/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.html</loc>
-    <lastmod>2018-10-13T12:56:17.756Z</lastmod>
-    <data>
-        <display>
-        <title>前端学习资源</title>
-        <pubTime>2018-08-13T08:47:55.227Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>resourse</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9.html</loc>
-    <lastmod>2018-10-08T08:05:58.401Z</lastmod>
-    <data>
-        <display>
-        <title>flutter学习第二天</title>
-        <pubTime>2018-10-04T03:10:12.000Z</pubTime>
-        
-        <tag>flutter</tag>
-         
-        <tag>dart</tag>
-         
-        <tag>material</tag>
-         
-         
-           
-             
-              <breadCrumb title="flutter" url="https://zjgyb.github.io/categories/flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-13T13:42:57.354Z</lastmod>
+  </url>  <url>
     <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9.html</loc>
-    <lastmod>2018-10-04T03:14:58.259Z</lastmod>
-    <data>
-        <display>
-        <title>flutter学习第一天</title>
-        <pubTime>2018-10-02T02:02:22.000Z</pubTime>
-        
-        <tag>flutter</tag>
-         
-        <tag>dart</tag>
-         
-        <tag>material</tag>
-         
-         
-           
-             
-              <breadCrumb title="flutter" url="https://zjgyb.github.io/categories/flutter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-11-13T13:40:14.133Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89.html</loc>
+    <lastmod>2018-11-13T12:28:24.722Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/vue%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97.html</loc>
+    <lastmod>2018-11-08T12:19:28.073Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/VeeValidate%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8.html</loc>
+    <lastmod>2018-11-02T01:50:41.421Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89.html</loc>
+    <lastmod>2018-10-31T12:34:46.000Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%89%E5%A4%A9.html</loc>
+    <lastmod>2018-10-28T12:17:49.540Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</loc>
+    <lastmod>2018-10-28T11:45:32.541Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B.html</loc>
+    <lastmod>2018-10-20T07:03:09.179Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/flutter%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.html</loc>
+    <lastmod>2018-10-15T09:31:09.821Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/%E4%B8%8D%E8%92%9C%E5%AD%90busuanzi%E5%A4%B1%E6%95%88.html</loc>
+    <lastmod>2018-10-13T13:29:53.172Z</lastmod>
+  </url>  <url>
+    <loc>https://zjgyb.github.io/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.html</loc>
+    <lastmod>2018-10-13T12:56:17.756Z</lastmod>
+  </url>  <url>
     <loc>https://zjgyb.github.io/FormData%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
     <lastmod>2018-09-23T09:01:15.239Z</lastmod>
-    <data>
-        <display>
-        <title>FormData的使用</title>
-        <pubTime>2018-08-14T06:00:57.100Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>API</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/es6%E5%AD%A6%E4%B9%A0.html</loc>
     <lastmod>2018-09-19T03:04:20.254Z</lastmod>
-    <data>
-        <display>
-        <title>es6学习</title>
-        <pubTime>2018-09-16T13:55:10.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>es6</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/canvas%E5%9F%BA%E7%A1%80.html</loc>
     <lastmod>2018-09-11T14:27:50.792Z</lastmod>
-    <data>
-        <display>
-        <title>canvas基础</title>
-        <pubTime>2018-08-27T02:28:49.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>API</tag>
-         
-        <tag>html5</tag>
-         
-        <tag>canvas</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/%E9%A2%84%E5%8A%A0%E8%BD%BD.html</loc>
     <lastmod>2018-09-01T08:04:16.393Z</lastmod>
-    <data>
-        <display>
-        <title>预加载</title>
-        <pubTime>2018-09-01T08:03:17.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>预加载</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/Pug%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%BB%93.html</loc>
     <lastmod>2018-08-24T02:41:35.725Z</lastmod>
-    <data>
-        <display>
-        <title>Pug语法小结</title>
-        <pubTime>2018-08-15T08:12:01.000Z</pubTime>
-        
-        <tag>pug</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/vscode%E5%91%BD%E4%BB%A4.html</loc>
     <lastmod>2018-08-23T10:03:59.351Z</lastmod>
-    <data>
-        <display>
-        <title>vscode常用快捷键</title>
-        <pubTime>2018-08-13T08:39:53.949Z</pubTime>
-        
-        <tag>vscode</tag>
-         
-        <tag>IDE</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发者手册" url="https://zjgyb.github.io/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/%E4%BD%BF%E7%94%A8es5%E5%AE%9E%E7%8E%B0es6%E4%B8%AD%E9%83%A8%E5%88%86API%E5%8A%9F%E8%83%BD.html</loc>
     <lastmod>2018-08-13T10:17:55.573Z</lastmod>
-    <data>
-        <display>
-        <title>使用es5实现es6中部分API功能</title>
-        <pubTime>2018-08-13T09:08:53.952Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>es6</tag>
-         
-        <tag>es5</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/jekyll.html</loc>
     <lastmod>2018-08-13T08:51:56.244Z</lastmod>
-    <data>
-        <display>
-        <title>jekyll介绍</title>
-        <pubTime>2018-08-13T08:17:56.934Z</pubTime>
-        
-        <tag>jekyll</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发者手册" url="https://zjgyb.github.io/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/git.html</loc>
     <lastmod>2018-08-10T13:46:04.061Z</lastmod>
-    <data>
-        <display>
-        <title>git的使用</title>
-        <pubTime>2018-08-10T03:59:20.714Z</pubTime>
-        
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发者手册" url="https://zjgyb.github.io/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/hello-world.html</loc>
     <lastmod>2018-08-10T13:45:51.679Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-08-10T03:54:45.125Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发者手册" url="https://zjgyb.github.io/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
+  </url>  <url>
     <loc>https://zjgyb.github.io/%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9.html</loc>
     <lastmod>2018-08-10T08:31:06.946Z</lastmod>
-    <data>
-        <display>
-        <title>代码压缩</title>
-        <pubTime>2018-08-10T03:54:45.126Z</pubTime>
-        
-        <tag>js</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://zjgyb.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
+  </url>
 </urlset>
