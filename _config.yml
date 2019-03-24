@@ -4,7 +4,7 @@
 
 # Site
 title: nicegong's blog
-subtitle: 得之我幸，失之我命
+subtitle: 越努力越幸运
 description: 这是nicegong的个人博客
 keywords: nicegong 博客 前端
 author: nicegong
@@ -115,6 +115,11 @@ codepen:
 # sidebar:
 #   position: left
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 # highlight_theme: normal
 
 # social:
