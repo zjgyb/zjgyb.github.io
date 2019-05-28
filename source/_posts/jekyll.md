@@ -29,11 +29,12 @@ copyright: true
 
 ### 加入摘要功能
 在`_config.yml`文件中加入下列命令
-excerpt_separator: '<\!\-\- more \-\->'
+excerpt_separator: '&lt;!-- more --&gt;'
 
-在文章中加入`<!-- more -->`，那么之前的内容就是摘要部分，或者在开头加入`excerpt: content`，其中`content`就是摘要内容
+在文章中加入`&lt;!-- more --&gt;`，那么之前的内容就是摘要部分，或者在开头加入`excerpt: content`，其中`content`就是摘要内容
 
 ### 添加css 语法
+
 \{: .cssName\}
 
 ### 参考来源

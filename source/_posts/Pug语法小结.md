@@ -10,7 +10,7 @@ tags:
 ## pug简介
 pug其实就是一种模板引擎。最终它将渲染成html的格式，只不过它比html简洁，所以有时候会用pug来学html代码。近期希望自己总结一下语法，可以时常回顾，而不需要翻看各类介绍。
 ## pug用法预览
-``` pug
+``` pug pug
 <!-- pug -->
 doctype html
 html
@@ -19,23 +19,23 @@ html
    body
       p.greetings#people Hello Views!
 ```
-``` html
+``` html html
 <!-- html -->
 <!DOCTYPE html>
 <html>
-    
+
    <head>
-      <title>Hello Pug</title>
-   </head>
-    
+      <title>Hello Pug<&#47;title>
+   <&#47;head>
+
    <body>
-      <p class = "greetings" id = "people">Hello Views!</p>
-   </body>
-</html>
+      <p class = "greetings" id = "people">Hello Views!<&#47;p>
+   <&#47;body>
+<&#47;html>
 ```
 ## 基本用法
 ### id,class
-``` pug
+``` pug pug
 div#content
 div.content
 // 只有div可以缩写以下形式
@@ -43,7 +43,7 @@ div.content
 .content
 ```
 ### 标签里含有其他属性（一行或多行都可以）
-``` pug
+``` pug pug
 input(
   type='checkbox'
   name='agreement'
@@ -53,18 +53,18 @@ input(
 )
 ```
 ### 变量（有多个class）
-``` pug
+``` pug pug
 - var classes = ["header-box", "wraper"]
 div(class=classes) somecode
 // 或者直接写入
 div(class="header-box wraper")
 ```
 ### 文件的引用
-``` pug
+``` pug pug
 script(src="/assets/jquery.min.js")
 ```
 ### 注释
-``` pug
+``` pug pug
 // 编译成<!-- -->（可以多行注释）
 <!-- some words -->
 //- 在pug中注释，但是不编译（可以多行注释）
@@ -72,7 +72,7 @@ script(src="/assets/jquery.min.js")
 ## 代码的重用
 ### Mixin
 使用mixin定义一个语法块
-``` pug
+``` pug pug
 mixin list
    ul
      li foo
@@ -80,11 +80,11 @@ mixin list
      li baz
 ```
 使用+命令，调用这个mixin命令
-``` pug
+``` pug pug
 +list
 ```
 还可以指定参数
-``` pug
+``` pug pug
 mixin pet(name)
   li.pet= name
 ul
@@ -94,7 +94,7 @@ ul
 ```
 ## 高级语法
 ### pug的if,else语法
-``` pug
+``` pug pug
 #user
   if 1 + 1 === 2
     p.con hello
@@ -102,25 +102,25 @@ ul
     p.con wrong
 ```
 ### 非
-``` pug
+``` pug pug
 unless 1+1 !== 2
   p.con hello
 ```
 ### each——for的别称
-``` pug
+``` pug pug
 ul
   each val, index in ['〇', '一', '二']
     li= index + ': ' + val
 ```
 ### while语法
-``` pug
+``` pug pug
 - var n = 0;
 ul
   while n < 4
     li= n++
 ```
 ### 不同文件的引用
-``` pug
+``` pug pug
 //- layout.pug
 doctype html
 html
@@ -135,9 +135,9 @@ html
    block body
 
    include footer.pug
-   
+
 ```
-``` pug
+``` pug pug
 //- layout-home.pug
 extends ./layout.pug
 

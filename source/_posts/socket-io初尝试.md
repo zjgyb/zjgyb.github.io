@@ -67,7 +67,7 @@ io.emit("chat message", data);
 
 ```js js
 // 先引入包，然后实例化，这样其实就简单的应用起来了
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js" />;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js" /&gt;;
 let socket = io();
 ```
 
@@ -114,10 +114,10 @@ io.on("connection", socket => {
 ### browser
 
 ```html html
-<ul id="messages"></ul>
+<ul id="messages"><&#47;ul>
 <form>
-  <input id="m" type="text" /> <button type="button" id="btn">Send</button>
-</form>
+  <input id="m" type="text" /> <button type="button" id="btn">Send<&#47;button>
+<&#47;form>
 <div class="name">
   <input
     type="text"
@@ -125,7 +125,7 @@ io.on("connection", socket => {
     class="username"
     placeholder="请输入你的用户名"
   />
-</div>
+<&#47;div>
 ```
 
 ```js js
@@ -159,7 +159,7 @@ m.addEventListener("keypress", event => {
 // 用户发言的内容展示出来
 socket.on("chat message", data => {
   let messages = document.getElementById("messages");
-  messages.innerHTML += `<li>${data.datas}说：${data.data}</li>`;
+  messages.innerHTML += `&lt;li&gt;${data.datas}说：${data.data}&lt;&#47;li&gt;`;
 });
 
 // 提示其他用户一个用户已上线

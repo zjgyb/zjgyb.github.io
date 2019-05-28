@@ -23,7 +23,7 @@ Vue——渐进式 JavaScript 框架
 ``` html html
 <div id="app">
   {{ message }}
-</div>
+<&#47;div>
 ```
 
 ```js js
@@ -39,14 +39,14 @@ const app = new Vue({
 
 ``` html html
 <div id="root">
-  <cupon @applied="onCuponValue" v-model="message"></cupon>
-  <p v-if="isShow">{{ message }}</p>
-</div>
+  <cupon @applied="onCuponValue" v-model="message"><&#47;cupon>
+  <p v-if="isShow">{{ message }}<&#47;p>
+<&#47;div>
 ```
 
 ```js js
 Vue.component('cupon', {
-  template: '<input type="text" @blur="onCuponValue">',
+  template: '&lt;input type="text" @blur="onCuponValue"&gt;',
   methods: {
     onCuponValue() {
       this.$emit('applied', this.$el.value);
@@ -83,20 +83,20 @@ let app = new Vue({
 ``` html html
 <div id="root">
   <con slot="header">
-    <h2 slot="title">Hello World!</h2>
-  </con>
-</div>
+    <h2 slot="title">Hello World!<&#47;h2>
+  <&#47;con>
+<&#47;div>
 ```
 
 ```js js
 Vue.component('con', {
   template: `
-    <div>
-      <slot name="title"></slot>
-      <slot>
+    &lt;div&gt;
+      &lt;slot name="title"&gt;<&#47;slot&gt;
+      &lt;slot&gt;
         Hello Vue!
-      </slot>
-    </div>
+      <&#47;slot>
+    <&#47;div>
   `
 });
 
@@ -112,20 +112,20 @@ new Vue({
 ``` html html
 <div id="root">
   <con slot="header">
-    <template slot="title">Hello World!</template>
-  </con>
-</div>
+    <template slot="title">Hello World!<&#47;template>
+  <&#47;con>
+<&#47;div>
 ```
 
 ``` js js
 Vue.component('con', {
   template: `
-    <div>
-      <slot name="title"></slot>
-      <slot>
+    &lt;div&gt;
+      &lt;slot name="title"&gt;&lt;&#47;slot&gt;
+      &lt;slot&gt;
         Hello Vue!
-      </slot>
-    </div>
+      &lt;&#47;slot&gt;
+    &lt;&#47;div&gt;
   `
 });
 

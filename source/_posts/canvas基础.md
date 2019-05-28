@@ -99,8 +99,8 @@ ctx.clearRect(20, 20, 100, 50);
 
 ### 在 html 页面插入 canvas
 
-```html
-<canvas id="content" width="200" height="200"></canvas>
+```html html
+<canvas id="content" width="200" height="200"><&#47;canvas>
 ```
 
 ### 插入一张图片

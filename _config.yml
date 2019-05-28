@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: nicegong's blog
+title: tony's blog
 subtitle: 越努力越幸运
-description: 这是nicegong的个人博客
-keywords: nicegong 博客 前端
-author: nicegong
+description: 这是tony的个人博客
+keywords: 前端
+author: tony
 language: zh-Hans
 timezone:
 
@@ -53,7 +53,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace:
+  tab_replace: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -132,4 +132,28 @@ search:
 #   GitHub: github
 #   Twitter: twitter
 
-# since: 2018
+since: 2018
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+    - '**/*.md'
+    - '**/*.swig'
+    - '**/*.html'
+# 压缩css
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
+    - '**/comments.gitalk.js'
+    - '**/jquery_pjax_min_js.js'

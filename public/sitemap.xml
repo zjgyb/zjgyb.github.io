@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zjgyb.github.io/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.html</loc>
+    
+    <lastmod>2019-05-25T01:51:29.034Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/nodejs%E5%AE%9E%E7%8E%B0%E7%AE%80%E6%98%93%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C.html</loc>
+    
+    <lastmod>2019-05-23T13:13:39.628Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/websocket%E4%BA%A4%E4%BA%92.html</loc>
+    
+    <lastmod>2019-05-19T08:30:29.344Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/about/index.html</loc>
+    
+    <lastmod>2019-05-19T08:17:28.325Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/regular-express-1.html</loc>
+    
+    <lastmod>2019-05-18T04:39:59.815Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/FormData%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
+    
+    <lastmod>2019-05-18T04:04:16.682Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zjgyb.github.io/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.html</loc>
+    
+    <lastmod>2019-02-12T03:00:31.816Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zjgyb.github.io/vue-cli3%E4%BD%BF%E7%94%A8mock.html</loc>
     
     <lastmod>2019-01-28T13:57:37.027Z</lastmod>
@@ -72,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://zjgyb.github.io/about/index.html</loc>
-    
-    <lastmod>2018-11-04T07:34:29.086Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zjgyb.github.io/VeeValidate%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8.html</loc>
     
     <lastmod>2018-11-02T01:50:41.421Z</lastmod>
@@ -124,20 +166,6 @@
     <loc>https://zjgyb.github.io/%E4%B8%8D%E8%92%9C%E5%AD%90busuanzi%E5%A4%B1%E6%95%88.html</loc>
     
     <lastmod>2018-10-13T13:29:53.172Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zjgyb.github.io/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90.html</loc>
-    
-    <lastmod>2018-10-13T12:56:17.756Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zjgyb.github.io/FormData%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
-    
-    <lastmod>2018-09-23T09:01:15.239Z</lastmod>
     
   </url>
   

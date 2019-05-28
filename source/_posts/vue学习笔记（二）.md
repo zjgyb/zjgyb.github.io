@@ -39,10 +39,10 @@ keywords: Vue js 前端 学习 学习笔记
     @focus="input"
 />
 <transition name="fade">
-<p class="text" v-if="message">
-    需要输入字符
-</p>
-</transition>
+  <p class="text" v-if="message">
+      需要输入字符
+  <&#47;p>
+<&#47;transition>
 ```
 
 ```css css
@@ -107,8 +107,8 @@ new Vue({
 >
 <p class="text" v-if="message">
     需要输入字符
-</p>
-</transition>
+<&#47;p>
+<&#47;transition>
 ```
 
 {% jsfiddle eywraw8t/441809 result,html,css,js light %}

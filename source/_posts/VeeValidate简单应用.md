@@ -12,22 +12,21 @@ keywords:  VeeValidate简单应用 VeeValidate Vue js 前端 学习 学习笔记
 description:
 ---
 
-
 {% note info %}
-VeeValidate使你表单操作更加的轻松快捷。
+VeeValidate 使你表单操作更加的轻松快捷。
 {% endnote %}
 
 <!-- more -->
 
 ## 导读
 
-在[vue学习笔记（二）](https://zjgyb.github.io/vue学习笔记（二）.html)中已经介绍了VeeValidate相关知识，这篇文章将进一步介绍。
+在[vue 学习笔记（二）](https://zjgyb.github.io/vue学习笔记（二）.html)中已经介绍了 VeeValidate 相关知识，这篇文章将进一步介绍。
 
 ## 简单使用
 
-``` html html
-<input v-validate="'required'" name="myinput" type="text">
-<span>{{ errors.first('myinput') }}</span>
+```html html
+<input v-validate="'required'" name="myinput" type="text" />
+<span>{{ errors.first('myinput') }}<&#47;span></span>
 ```
 
 ```js js
@@ -47,7 +46,7 @@ Vue.use(VeeValidate);
 - digits(规定数字的位数)
 - ext(规定上传文件的类型)
 - image(规定上传的文件是图片)
-- ip(ipv4地址是否正确)
+- ip(ipv4 地址是否正确)
 - mines(一类文件类型)
 - min&&max(最小最大长度)
 - numeric(全部是数字)
@@ -57,30 +56,30 @@ Vue.use(VeeValidate);
 
 ## 关于提交或者校验
 
-``` js js
+```js js
 export default {
-    // ...
-    methods: {
-        onSubmit () {
-        this.$validator.validate().then(result => {
-            if (!result) {
-                // do stuff if not valid.
-            }
-        });
+  // ...
+  methods: {
+    onSubmit() {
+      this.$validator.validate().then(result => {
+        if (!result) {
+          // do stuff if not valid.
         }
+      });
     }
-    // ...
-}
+  }
+  // ...
+};
 ```
 
 ## 关于语言的修改
 
 在入口文件中配置，例如中文
 
-``` js js
+```js js
 import VeeValidate, { Validator } from "vee-validate";
 import zh from "vee-validate/dist/locale/zh_CN";
-Validator.localize('zh_CN', zh);
+Validator.localize("zh_CN", zh);
 Vue.use(VeeValidate);
 ```
 
@@ -88,19 +87,19 @@ Vue.use(VeeValidate);
 
 ```js js
 const dict = {
-    custom: {
-        // input里面的name
-        email: {
-            required: '邮箱不为空？',
-            email: '兄弟你错了'
-        },
+  custom: {
+    // input里面的name
+    email: {
+      required: "邮箱不为空？",
+      email: "兄弟你错了"
     }
+  }
 };
 
-this.$validator.localize('zh_CN', dict);
+this.$validator.localize("zh_CN", dict);
 
 // 或者(看Validator是否引入)
-Validator.localize('zh_CN', dict);
+Validator.localize("zh_CN", dict);
 ```
 
 ## 关于自定义规则

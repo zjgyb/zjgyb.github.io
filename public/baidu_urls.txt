@@ -1,3 +1,3 @@
-https://zjgyb.github.io/vue-cli3使用mock.html
-https://zjgyb.github.io/python学习笔记（一）.html
-https://zjgyb.github.io/stop.html
+https://zjgyb.github.io/单例模式.html
+https://zjgyb.github.io/nodejs实现简易登录注册.html
+https://zjgyb.github.io/websocket交互.html

@@ -4,6 +4,8 @@ tags:
 ---
 
 ## hexo的note语法
+
+### note
 ```
 {% note %} Content (md partial supported of none) {% endnote %}
 {% note default %} Content (md partial supported of default) {% endnote %}
@@ -12,6 +14,20 @@ tags:
 {% note info %} Content (md partial supported of info) {% endnote %}
 {% note warning %} Content (md partial supported of warning) {% endnote %}
 {% note danger %} Content (md partial supported of danger) {% endnote %}
+```
+
+### 引用
+
+```
+{% centerquote %}blah blah blah{% endcenterquote %}
+// 或者
+{% cq %} blah blah blah {% endcq %}
+```
+
+### 图片突破宽度限制
+
+```
+{% fi /image-url, alt, title %}
 ```
 
 ## 草稿相关
@@ -37,6 +53,9 @@ hexo publish [post] title
 ## 一些插件用法
 
 [插件](https://hexo.io/docs/tag-plugins.html)
+
+## 添加搜素
+[搜索功能](https://juejin.im/post/5ad8b40c6fb9a07abd0d314c)
 
 ## 修改记录
 
@@ -88,3 +107,6 @@ figcaption {
 
 ## 参考教程
 [hexo官方教程](https://hexo.io/zh-cn/docs/ 'hexo官方教程')
+
+## 问题
+添加搜索后压缩会出问题(未解决)

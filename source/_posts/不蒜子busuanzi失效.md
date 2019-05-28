@@ -20,12 +20,12 @@ photos:
 在`themes/next/layout/_third-party/analytics/busuanzi-counter.swig`中
 把以下代码
 
-```js
-<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"/>
+```js js
+&lt;script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"/>
 ```
 
 改成
 
-```js
-<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"/>
+```js js
+&lt;script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"/>
 ```

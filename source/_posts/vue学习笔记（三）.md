@@ -27,15 +27,15 @@ description:
 
 ```html html
 <div id="root">
-  <!--
-    <p>age ——{{ addToA() }}</p>
-    <p>age —— {{ addToB() }}</p>
-  -->
-  <p>age ——{{ addToA }}</p>
-  <p>age —— {{ addToB }}</p>
-  <button @click="addA">add age A</button>
-  <button @click="addB">add age B</button>
-</div>
+  &lt;!--
+    &lt;p&gt;age ——{{ addToA() }}&lt;/p&gt;
+    &lt;p&gt;age —— {{ addToB() }}&lt;/p&gt;
+  --&gt;
+  <p>age ——{{ addToA }}<&#47;p>
+  <p>age —— {{ addToB }}<&#47;p>
+  <button @click="addA">add age A<&#47;button>
+  <button @click="addB">add age B<&#47;button>
+<&#47;div>
 ```
 
 ```js js
@@ -91,9 +91,9 @@ new Vue({
 
 ```html html
 <div v-for="text in texts" :key="text.id" class="text">
-  <h3>{{ text.title | upperCase }}</h3>
-  <article>{{ text.body | catwords }}</article>
-</div>
+  <h3>{{ text.title | upperCase }}<&#47;h3>
+  <article>{{ text.body | catwords }}<&#47;article>
+<&#47;div>
 ```
 
 ```js js
