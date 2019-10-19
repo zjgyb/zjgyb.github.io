@@ -6,3 +6,6 @@ node_modules/
 .deploy*/
 zjgyb.github.io/
 public/
+package-lock.json
+yarn.lock
+.vscode/

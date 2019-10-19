@@ -102,7 +102,7 @@ githubEmojis:
   enable: true
   className: github-emoji
   inject: true
-  unicode: true
+  unicode: false
   styles:
   localEmojis:
 
@@ -136,10 +136,15 @@ since: 2018
 neat_enable: true
 neat_html:
   enable: true
+  collapseWhitespace: true
+  decodeEntities: true
+  removeComments: true
+  removeScriptTypeAttributes: true
+  useShortDoctype: true
   exclude:
-    - '**/*.md'
-    - '**/*.swig'
-    - '**/*.html'
+    # - '**/*.md'
+    # - '**/*.swig'
+
 # 压缩css
 neat_css:
   enable: true

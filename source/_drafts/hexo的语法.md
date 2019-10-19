@@ -24,6 +24,14 @@ tags:
 {% cq %} blah blah blah {% endcq %}
 ```
 
+### 图片相关
+
+新建的时候文件名和title一致，如果改了title名，那么存放静态文件的名字也要随之改变，否则将加载不出
+
+```md
+![浏览器查看存储信息](web存储&cookie/web.png)
+```
+
 ### 图片突破宽度限制
 
 ```
@@ -42,6 +50,11 @@ hexo publish [post] title
 启动
 `hexo s --draft`
 
+提交
+```
+hexo g
+hexo d
+```
 ## seo优化
 [参考](https://hjptriplebee.github.io/hexo%E7%9A%84SEO%E6%96%B9%E6%B3%95.html/ '参考博客')
 

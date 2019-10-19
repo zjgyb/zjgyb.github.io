@@ -5,10 +5,13 @@ comments: false
 ---
 
 ## 简述
-姓名：tony
+
+姓名：Tony
 职业：学生
+
 ## 教育背景
+
 * 2016-至今 华北电力大学
 
 ## 联系方式
-* Email: zjsgyb@gmail.com
+* Email: zjsgyb@outlook.com
