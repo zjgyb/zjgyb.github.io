@@ -101,8 +101,8 @@ passage_end_tag:
 githubEmojis:
   enable: true
   className: github-emoji
-  inject: true
-  unicode: false
+  inject: false
+  unicode: true
   styles:
   localEmojis:
 
@@ -162,3 +162,9 @@ neat_js:
     - '**/index.js'
     - '**/comments.gitalk.js'
     - '**/jquery_pjax_min_js.js'
+
+# 图片懒加载
+lazyload:
+  enable: true
+  onlypost: false
+  loadImg: ./images/loading.gif

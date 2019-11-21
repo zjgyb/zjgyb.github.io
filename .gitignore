@@ -8,4 +8,4 @@ zjgyb.github.io/
 public/
 package-lock.json
 yarn.lock
-.vscode/
+.vscode

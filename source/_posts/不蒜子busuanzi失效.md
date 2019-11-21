@@ -21,11 +21,11 @@ photos:
 把以下代码
 
 ```js js
-&lt;script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"/>
+<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" />
 ```
 
 改成
 
 ```js js
-&lt;script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"/>
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" />
 ```

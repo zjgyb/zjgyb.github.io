@@ -101,7 +101,7 @@ figcaption {
 
 在`E:\git\zjgyb.github.io\themes\next\source\css\_common\components\post\post-expand.styl`增加了移动端适配
 
-在`E:\git\zjgyb.github.io\themes\next\source\css\_schemes\Pisces\_layout.styl`新镇了`+mobile-smallest()`这一语句
+在`E:\git\zjgyb.github.io\themes\next\source\css\_schemes\Pisces\_layout.styl`新增了`+mobile-smallest()`这一语句
 
 在`E:\git\zjgyb.github.io\themes\next\source\css\_custom\custom.styl`新增了`@media`
 
