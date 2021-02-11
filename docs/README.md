@@ -2,10 +2,11 @@
 home: true
 bgImage: '/banner.jpg'
 bgImageStyle: {
-  height: '450px'
+  height: '450px',
+  color: '#fff'
 }
-faceImage: '/avatar.jpg'
-heroImage: /hero_write.png
+# authorAvatar: '/avatar.jpg'
+# heroImage: /hero_write.png
 heroImageStyle: {
   maxHeight: '200px',
   display: block,

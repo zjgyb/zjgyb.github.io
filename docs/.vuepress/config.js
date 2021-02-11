@@ -4,7 +4,6 @@ const plugins = require('./plugins/index');
 module.exports = {
   title: "Tony's Blob",
   description: "越努力越幸运",
-  base: '/zjgyb.github.io/',
   dest: "public",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
