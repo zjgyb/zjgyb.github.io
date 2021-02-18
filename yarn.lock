@@ -1327,12 +1327,12 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-medium-zoom@1.0.0-alpha.0":
-  version "1.0.0-alpha.0"
-  resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.0.0-alpha.0.tgz#efb6bd10d41c64161e3e25d6108fe527ebd4abad"
-  integrity sha1-77a9ENQcZBYePiXWEI/lJ+vUq60=
+"@vuepress/plugin-medium-zoom@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.2.0.tgz#de2bb3299f8a0b721d5b281968f4e1588e3fcfd0"
+  integrity sha1-3iuzKZ+KC3IdWygZaPThWI4/z9A=
   dependencies:
-    medium-zoom "^0.4.0"
+    medium-zoom "^1.0.4"
 
 "@vuepress/plugin-medium-zoom@1.5.0":
   version "1.5.0"
@@ -1348,13 +1348,13 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pwa@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.npm.taobao.org/@vuepress/plugin-pwa/download/@vuepress/plugin-pwa-1.8.0.tgz#e3baa9a83828cd3d538825a5b52db3c217b2f220"
-  integrity sha1-47qpqDgozT1TiCWltS2zwhey8iA=
+"@vuepress/plugin-pwa@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/@vuepress/plugin-pwa/download/@vuepress/plugin-pwa-1.2.0.tgz#d9bc1d74bcf4d57535d15d7fab2fead7c1d3fb3b"
+  integrity sha1-2bwddLz01XU10V1/qy/q18HT+zs=
   dependencies:
-    "@vuepress/shared-utils" "1.8.0"
-    register-service-worker "^1.7.0"
+    "@vuepress/shared-utils" "^1.2.0"
+    register-service-worker "^1.5.2"
     workbox-build "^4.3.1"
 
 "@vuepress/plugin-register-components@1.8.1":
@@ -1369,10 +1369,10 @@
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.8.1.tgz#24533d6845f8caf32a2939d09432dd9b4a236208"
   integrity sha1-JFM9aEX4yvMqKTnQlDLdm0ojYgg=
 
-"@vuepress/shared-utils@1.8.0", "@vuepress/shared-utils@^1.2.0":
-  version "1.8.0"
-  resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.8.0.tgz?cache=0&sync_timestamp=1609811187515&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vuepress%2Fshared-utils%2Fdownload%2F%40vuepress%2Fshared-utils-1.8.0.tgz#b1187c764f4c2dee018b83f3560a14067d931240"
-  integrity sha1-sRh8dk9MLe4Bi4PzVgoUBn2TEkA=
+"@vuepress/shared-utils@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.8.1.tgz#39fa9c41ff60f13578037ea6d554ab25975533bb"
+  integrity sha1-OfqcQf9g8TV4A36m1VSrJZdVM7s=
   dependencies:
     chalk "^2.3.2"
     escape-html "^1.0.3"
@@ -1384,10 +1384,10 @@
     toml "^3.0.0"
     upath "^1.1.0"
 
-"@vuepress/shared-utils@1.8.1":
-  version "1.8.1"
-  resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.8.1.tgz#39fa9c41ff60f13578037ea6d554ab25975533bb"
-  integrity sha1-OfqcQf9g8TV4A36m1VSrJZdVM7s=
+"@vuepress/shared-utils@^1.2.0":
+  version "1.8.0"
+  resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.8.0.tgz?cache=0&sync_timestamp=1609811187515&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vuepress%2Fshared-utils%2Fdownload%2F%40vuepress%2Fshared-utils-1.8.0.tgz#b1187c764f4c2dee018b83f3560a14067d931240"
+  integrity sha1-sRh8dk9MLe4Bi4PzVgoUBn2TEkA=
   dependencies:
     chalk "^2.3.2"
     escape-html "^1.0.3"
@@ -5494,11 +5494,6 @@ media-typer@0.3.0:
   resolved "https://registry.npm.taobao.org/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-medium-zoom@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npm.taobao.org/medium-zoom/download/medium-zoom-0.4.0.tgz#8e13c9b754903c0c903220611af0d3cd373a4222"
-  integrity sha1-jhPJt1SQPAyQMiBhGvDTzTc6QiI=
-
 medium-zoom@^1.0.4:
   version "1.0.6"
   resolved "https://registry.npm.taobao.org/medium-zoom/download/medium-zoom-1.0.6.tgz#9247f21ca9313d8bbe9420aca153a410df08d027"
@@ -6978,7 +6973,7 @@ regexpu-core@^4.7.1:
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.2.0"
 
-register-service-worker@^1.7.0:
+register-service-worker@^1.5.2:
   version "1.7.2"
   resolved "https://registry.npm.taobao.org/register-service-worker/download/register-service-worker-1.7.2.tgz?cache=0&sync_timestamp=1607600535028&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregister-service-worker%2Fdownload%2Fregister-service-worker-1.7.2.tgz#6516983e1ef790a98c4225af1216bc80941a4bd2"
   integrity sha1-ZRaYPh73kKmMQiWvEha8gJQaS9I=

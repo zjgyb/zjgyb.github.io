@@ -10,7 +10,7 @@ tags:
   - 伪元素
 copyright: true
 description: 总结CSS选择器，包含伪类和伪元素
-images: /css_select/bg.jpeg
+images: ./css_select/bg.jpeg
 date: 2020-02-18 21:16:20
 keywords:
 ---
@@ -57,7 +57,7 @@ p {
 
 **最终效果：**
 
-![效果图](/css_select/basic-selector.png)
+![效果图](./css_select/basic-selector.png)
 
 ### 多元素组合选择器
 
@@ -86,7 +86,7 @@ p {
 
 **最终效果：**
 
-![效果图](/css_select/more-elements-selector-1.png)
+![效果图](./css_select/more-elements-selector-1.png)
 
 #### `A B`
 
@@ -112,7 +112,7 @@ p {
 
 **最终效果：**
 
-![效果图](/css_select/more-elements-selector-2.png)
+![效果图](./css_select/more-elements-selector-2.png)
 
 #### `A>B`
 
@@ -133,7 +133,7 @@ p {
 
 **最终效果：**
 
-![效果图](/css_select/more-elements-selector-3.png)
+![效果图](./css_select/more-elements-selector-3.png)
 
 #### `A+B`
 
@@ -158,7 +158,7 @@ p {
 
 **最终效果：**
 
-![效果图](/css_select/more-elements-selector-4.png)
+![效果图](./css_select/more-elements-selector-4.png)
 
 #### `A~B`
 
@@ -183,7 +183,7 @@ p {
 
 **最终效果：**
 
-![效果图](/css_select/more-elements-selector-5.png)
+![效果图](./css_select/more-elements-selector-5.png)
 
 ### 属性选择器
 
@@ -240,7 +240,7 @@ p {
 </p>
 ```
 
-![效果图](/css_select/attr-selector.png)
+![效果图](./css_select/attr-selector.png)
 
 ### 伪类选择器
 
@@ -264,7 +264,7 @@ p {
 
 一图胜千言，来自腾讯全端 AlloyTeam中的文章
 
-![效果图](/css_select/伪类.png)
+![效果图](./css_select/pseudo-classes.png)
 
 #### 语言相关
 
@@ -386,7 +386,7 @@ p {
 
 一图胜千言，来自腾讯全端 AlloyTeam中的文章
 
-![效果图](/css_select/伪元素.png)
+![效果图](./css_select/pseudo-element.png)
 
 伪元素相对于伪类来说少很多
 

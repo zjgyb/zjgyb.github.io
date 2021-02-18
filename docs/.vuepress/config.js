@@ -1,4 +1,4 @@
-const themeConfig = require('./config/theme/');
+const themeConfig = require('./config/theme/index');
 const plugins = require('./plugins/index');
 
 module.exports = {

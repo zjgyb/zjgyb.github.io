@@ -1,5 +1,10 @@
 module.exports = [
-  ["@vuepress/medium-zoom"],
+  [
+    "@vuepress/medium-zoom",
+    {
+      selector: ".page img",
+    },
+  ],
   ["flowchart"],
   [
     "dynamic-title",
