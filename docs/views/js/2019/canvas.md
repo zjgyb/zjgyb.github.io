@@ -130,14 +130,15 @@ image.src =
 
 ### 绘制一个时钟
 
-效果图
-
 <canvas id="clock" width="200" height="200"></canvas>
 
 <script>
 setTimeout(() => {
     (function() {
-        const content = document.querySelector('#con1');
+        const content = globalThis?.document?.querySelector('#con1');
+        if (!content) {
+            return;
+        }
         let ctx = content.getContext('2d');
         let image = new Image();
         image.onload = function() {
@@ -159,7 +160,10 @@ setTimeout(() => {
 
     (function() {
 
-        let clock = document.querySelector('#clock');
+        let clock = globalThis?.document?.querySelector('#clock');
+        if (!clock) {
+            return;
+        }
         let ctx = clock.getContext('2d');
         let r = ctx.canvas.width / 2;
 
