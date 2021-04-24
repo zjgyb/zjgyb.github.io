@@ -3775,8 +3775,8 @@ feed@2.0.4:
 
 figgy-pudding@^3.5.1:
   version "3.5.2"
-  resolved "https://registry.npm.taobao.org/figgy-pudding/download/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
-  integrity sha1-tO7oFIq7Adzx0aw0Nn1Z4S+mHW4=
+  resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
+  integrity sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==
 
 figures@^3.0.0:
   version "3.2.0"
@@ -7560,9 +7560,9 @@ sshpk@^1.7.0:
     tweetnacl "~0.14.0"
 
 ssri@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npm.taobao.org/ssri/download/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
-  integrity sha1-KjxBso3UW2K2Nnbst0ABJlrp7dg=
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.2.tgz#157939134f20464e7301ddba3e90ffa8f7728ac5"
+  integrity sha512-cepbSq/neFK7xB6A50KHN0xHDotYzq58wWCa5LeWqnPrHG8GzfEjO/4O8kpmcGW+oaxkvhEJCWgbgNk4/ZV93Q==
   dependencies:
     figgy-pudding "^3.5.1"
 
@@ -8595,10 +8595,10 @@ vuepress-theme-reco@^1.6.6:
     vue-demi "^0.5.3"
     vuepress-plugin-smooth-scroll "^0.0.9"
 
-vuepress@^1.8.2:
+vuepress@~1.8.2:
   version "1.8.2"
-  resolved "https://registry.nlark.com/vuepress/download/vuepress-1.8.2.tgz?cache=0&sync_timestamp=1618992432039&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvuepress%2Fdownload%2Fvuepress-1.8.2.tgz#97e8bf979630611fc7b621fc4cc35b798ee5e847"
-  integrity sha1-l+i/l5YwYR/HtiH8TMNbeY7l6Ec=
+  resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.8.2.tgz#97e8bf979630611fc7b621fc4cc35b798ee5e847"
+  integrity sha512-BU1lUDwsA3ghf7a9ga4dsf0iTc++Z/l7BR1kUagHWVBHw7HNRgRDfAZBDDQXhllMILVToIxaTifpne9mSi94OA==
   dependencies:
     "@vuepress/core" "1.8.2"
     "@vuepress/theme-default" "1.8.2"
