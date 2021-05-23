@@ -5,9 +5,9 @@ export default {
     $recoPosts () {
       let posts = this.$site.pages
 
-      posts = filterPosts(posts, false)
+      posts = filterPosts(posts, true)
       sortPostsByStickyAndDate(posts)
-
+      
       return posts
     },
     $recoPostsForTimeline () {

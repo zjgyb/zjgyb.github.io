@@ -1,6 +1,6 @@
 ---
 title: Vue源码分析阅读笔记
-date: '2021/02/15'
+date: 2021-02-15'
 categories: Vue
 ---
 

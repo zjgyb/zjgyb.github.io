@@ -17,7 +17,8 @@ const modeOptions = {
     '--text-color-sub': '#7F7F7F',
     '--border-color': '#eaecef',
     '--code-color': 'rgba(27, 31, 35, 0.05)',
-    '--mask-color': '#888'
+    '--mask-color': '#888',
+    '--theme-primary': '#424242'
   },
   dark: {
     '--default-color-10': 'rgba(0, 0, 0, 1)',
@@ -37,7 +38,8 @@ const modeOptions = {
     '--text-color-sub': '#8B8B8B',
     '--border-color': 'rgba(0, 0, 0, .3)',
     '--code-color': 'rgba(0, 0, 0, .3)',
-    '--mask-color': '#000'
+    '--mask-color': '#000',
+    '--theme-primary': '#fff'
   }
 }
 
