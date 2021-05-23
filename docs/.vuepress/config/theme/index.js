@@ -14,8 +14,8 @@ module.exports = Object.assign({}, themeReco, {
   authorAvatar: '/avatar.jpg',
   // 评论
   valineConfig: {
-    appId: "qzOeHVSL5KMvr5tgiCnzAIA8-gzGzoHsz", // your appId
-    appKey: "rONYpsgFK6ApQr7pq6dbx2kR", // your appKey
+    appId: "jNgAuNqjkGl2kHF5Nj3fBx8M-gzGzoHsz", // your appId
+    appKey: "6zqaO8KcNdGTfAVhxDxFtLAp", // your appKey
     notify: true, // mail notifier , https://github.com/xCss/Valine/wiki
     verify: false, // Verification code
     placeholder: "Just go go", // comment box placeholder

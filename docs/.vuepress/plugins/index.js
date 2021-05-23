@@ -9,9 +9,9 @@ module.exports = [
   [
     "dynamic-title",
     {
-      showIcon: "vuepress/smile.ico",
+      showIcon: "favicon.ico",
       showText: "(/≧▽≦/)欢迎帅哥美女！",
-      hideIcon: "vuepress/cry.ico",
+      hideIcon: "cry.ico",
       hideText: "(●—●)呜呜，不要走嘛！！",
       recoverTime: 2000,
     },

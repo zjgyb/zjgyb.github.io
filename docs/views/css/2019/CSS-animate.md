@@ -5,7 +5,7 @@ tags:
   - animation
 copyright: true
 description: 介绍CSS动画需要用到的属性以及制作好看的动画
-images: /CSS-animate/css-animate.png
+images: ./CSS-animate./CSS-animate.png
 date: 2019-07-16 13:44:53
 categories: CSS
 keywords:
@@ -51,20 +51,20 @@ keywords:
 
 第一步
 
-![第一步](/CSS-animate/first-step.png)
+![第一步](./CSS-animate/first-step.png)
 
 第二步
 
-![第二步](/CSS-animate/second-step.png)
+![第二步](./CSS-animate/second-step.png)
 
 第三步
 
-![第三步](/CSS-animate/third-step.png)
+![第三步](./CSS-animate/third-step.png)
 
 
 第四步
 
-![第四步](/CSS-animate/forth-step.png)
+![第四步](./CSS-animate/forth-step.png)
 
 
 ## 最终效果
