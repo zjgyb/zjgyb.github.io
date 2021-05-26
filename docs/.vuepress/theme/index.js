@@ -27,13 +27,6 @@ module.exports = (options, ctx) => ({
     ['@vuepress/medium-zoom', {
       selector: '.theme-reco-content :not(a) > img'
     }],
-    ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: {
-          message: "发现新内容可用",
-          buttonText: "刷新"
-      }
-    }],
     '@vuepress/plugin-nprogress',
     ['@vuepress/plugin-blog', {
       permalink: '/:regular',

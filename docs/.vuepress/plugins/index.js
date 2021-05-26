@@ -23,6 +23,7 @@ module.exports = [
       serviceWorker: true,
       updatePopup: {
         message: "发现新内容可用",
+        popupComponent: 'MySWUpdatePopup',
         buttonText: "刷新",
       },
     },
