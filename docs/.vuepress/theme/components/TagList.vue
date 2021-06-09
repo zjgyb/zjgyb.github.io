@@ -10,8 +10,8 @@
         @click="tagClick(item)">{{item.name}}</span>
     </div>
     <div class="tags_more">
-      <button class="tags_more-btn"
-              @click="showMore = !showMore">{{ showMore ? '收起' : '展示更多' }}</button>
+      <my-button class="tags_more-btn"
+              @click="showMore = !showMore">{{ showMore ? '收起' : '展示更多' }}</my-button>
     </div>
   </div>
 </template>

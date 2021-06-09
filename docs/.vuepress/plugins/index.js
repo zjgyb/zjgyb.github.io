@@ -1,4 +1,5 @@
 module.exports = [
+  ['demo-code'],
   [
     "@vuepress/medium-zoom",
     {
