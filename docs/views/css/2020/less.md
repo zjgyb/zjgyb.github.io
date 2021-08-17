@@ -478,6 +478,26 @@ iscolor(blue); // true
 isurl(blue); // false
 ```
 
+### round
+
+round(number, decimalPlaces)
+number: 代表浮点数
+decimalPlaces: 可选，四舍五入的小数位数。默认为0
+
+```less
+round(1.6); // 2
+round(1.66, 1); // 1.7
+```
+
+### max
+
+返回最大值：
+
+```less
+max(1, 0)
+```
+
+
 ## 插件@plugin
 
 ```js
@@ -520,7 +540,6 @@ module.exports = {
   border: 1px solid #colors[secondary];
 }
 ```
-
 ## 其他
 
 ```less
