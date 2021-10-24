@@ -27,17 +27,11 @@ git branch dev
 git checkout dev
 ```
 
-## 查看本地分支 \*表示当前分支
+## 查看分支
 
-```git
-git branch
-```
-
-## 查看远程全部分支 白色本地存在，红色本地不存在
-
-```git
-git branch -a
-```
+1. `git branch`: 查看本地分支 \*表示当前分支
+2. `git branch -a`: 查看远程全部分支 白色本地存在，红色本地不存在
+3. `git branch -r`: 查看远程分支
 
 ## 分支合并(将 dev 合并到 master)
 
@@ -121,3 +115,32 @@ git diff filename
 ## 解决冲突
 
 删除冲突代码，然后使用`git commit`，按下`Shift + ;`键，然后输入`wq`，最后按下`Enter`键
+
+## git推到github失败解决措施
+
+### 解决措施1
+
+1. 打开windows目录下`C://Windows/System32/drivers/etc`
+2. 修改hosts文件
+
+```
+#github
+#192.30.253.112 github.com
+#151.101.185.194 github.global.ssl.fastly.net
+```
+
+## 远程仓库相关
+
+1. `git remote -v`：查看远程仓库
+2. `git remote rm origin`: 删除远程仓库
+3. `git remote add origin`: 新增远程仓库
+
+## 克隆需要的类型定义包
+
+**注意**：需要git版本2.27.0及以上，该方法来自[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
+
+1. `git clone --sparse --filter=blob:none --depth=1 <forkedUrl>`
+    - `--sparse` 告知 git 使用 sparse-checkout 方式，所以首次克隆的只有根部的文件。
+    - `--filter=blob:none` 将排除文件，只在需要时获取它们。
+    - `--depth=1` 可以通过阶段提交历史来进一步提高克隆速度，不过它可能会导致一些问题，见：[here](https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/).
+2. `git sparse-checkout add types/<type> types/<dependency-type> ...`
