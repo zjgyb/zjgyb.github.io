@@ -135,6 +135,13 @@ git diff filename
 2. `git remote rm origin`: 删除远程仓库
 3. `git remote add origin`: 新增远程仓库
 
+## fork同步分支
+
+1. `git remote add upstream https://xxx`
+2. `git fetch upstream`
+3. `git merge upstream/master`
+4. `git push`
+
 ## 克隆需要的类型定义包
 
 **注意**：需要git版本2.27.0及以上，该方法来自[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
