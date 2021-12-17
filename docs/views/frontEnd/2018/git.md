@@ -151,3 +151,26 @@ git diff filename
     - `--filter=blob:none` 将排除文件，只在需要时获取它们。
     - `--depth=1` 可以通过阶段提交历史来进一步提高克隆速度，不过它可能会导致一些问题，见：[here](https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/).
 2. `git sparse-checkout add types/<type> types/<dependency-type> ...`
+
+## 取消代理
+
+```bash
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+## 设置代理
+
+```bash
+git config --global https.proxy http://127.0.0.1:1080
+
+git config --global https.proxy https://127.0.0.1:1080
+```
+
+## 设置ss
+
+```bash
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+```
