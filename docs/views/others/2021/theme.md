@@ -5,6 +5,14 @@ categories:
  - 其他
 ---
 
+## sass-loader报错
+
+```
+TypeError: this.getOptions is not a function
+```
+
+解决措施：降级node-sass和sass-loader
+
 ## 最新包1.6.5问题
 
 问题：安装到最新包但是报themeConfig`undefined`问题
