@@ -29,32 +29,32 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/theme.scss';
+<style lang="less" scoped>
+@import '../styles/theme.less';
 
-$width: 32px;
-$radius: 8px;
+@width: 32px;
+@radius: 8px;
 
 ._switch {
   position: relative;
-  width: $width + 2 * $radius;
-  height: 2 * $radius;
-  border-radius: $radius;
+  width: @width + 2 * @radius;
+  height: 2 * @radius;
+  border-radius: @radius;
   background-color: #b7c1b2;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
   appearance: none;
   transition: 0.5s;
 
   &:checked {
-    background: $active;
+    background: @active;
   }
 
   &:before {
     content: '';
     position: absolute;
     left: 0;
-    width: $radius * 2;
-    height: $radius * 2;
+    width: @radius * 2;
+    height: @radius * 2;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     background-color: #fff;
@@ -63,7 +63,7 @@ $radius: 8px;
   }
 
   &:checked:before {
-    left: $width;
+    left: @width;
   }
 }
 </style>

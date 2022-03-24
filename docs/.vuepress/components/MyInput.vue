@@ -92,14 +92,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/theme.scss';
+<style lang="less" scoped>
+@import '../styles/theme.less';
 
 .my-textfield {
   position: relative;
 }
 
-%active_label {
+.active_label {
   top: -8px;
   left: 12px;
   font-size: 12px;
@@ -108,7 +108,7 @@ export default {
   font-weight: 500;
 }
 
-%text {
+.text {
   box-sizing: border-box;
   width: 100%;
   padding: 0 15px;
@@ -120,19 +120,19 @@ export default {
   background-color: #fff;
 
   &:focus {
-    border-color: $active;
+    border-color: @active;
 
     & + .label-normal,
     & + .label-small {
-      @extend %active_label;
-      color: $active;
+      .active_label;
+      color: @active;
     }
   }
 
   &:valid {
     & + .label-normal,
     & + .label-small {
-      @extend %active_label;
+      .active_label;
     }
   }
 
@@ -141,23 +141,23 @@ export default {
     color: #AAA;
     & + .label-normal,
     & + .label-small {
-      @extend %active_label;
+      .active_label;
     }
   }
 }
 
 .text-normal {
-  @extend %text;
+  .text;
   height: 51px;
 }
 
 .text-small {
-  @extend %text;
+  .text;
   height: 48px;
   border-radius: 8px;
 }
 
-%label {
+.label {
   position: absolute;
   box-sizing: border-box;
 
@@ -170,13 +170,13 @@ export default {
 }
 
 .label-normal {
-  @extend %label;
+  .label;
   top: 15px;
   height: 19px;
 }
 
 .label-small {
-  @extend %label;
+  .label;
   top: 13px;
   height: 22px;
 }
@@ -194,13 +194,13 @@ export default {
 
 .error {
   bottom: -15px;
-  border-color: $danger !important;
-  color: $danger !important;
+  border-color: @danger !important;
+  color: @danger !important;
 
   &:invalid:not(:empty) {
     & + .label-normal,
     & + .label-small {
-      @extend %active_label;
+      .active_label;
     }
   }
 }

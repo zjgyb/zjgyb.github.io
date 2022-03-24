@@ -251,7 +251,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="less" scoped>
 // .color-picker {
 //   width: 278px;
 //   margin: 0 auto;
@@ -291,7 +291,7 @@ export default {
   }
 }
 
-%radio {
+.raido {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -348,7 +348,7 @@ export default {
     clip-path: none;
 
     .radio {
-      @extend %radio;
+      .raido;
       top: -6%;
       left: -6px;
     }
@@ -361,7 +361,7 @@ export default {
   margin-top: 12px;
 }
 
-%select {
+.select {
   position: relative;
   width: 192px;
   height: 8px;
@@ -371,7 +371,7 @@ export default {
 
 // 透明度
 .select-opacity {
-  @extend %select;
+  .select;
   background: url('../images/MaskGroup2.svg') no-repeat 100% 100%;
 
   .opacity-bar {
@@ -386,14 +386,14 @@ export default {
   }
 
   .radio {
-    @extend %radio;
+    .raido;
     top: -4px;
     left: 0%;
   }
 }
 
 .select-grey {
-  @extend %select;
+  .select;
   background-image: linear-gradient(
     to left,
     #fff,
@@ -403,7 +403,7 @@ export default {
   margin-top: 20px;
 
   .radio {
-    @extend %radio;
+    .raido;
     top: -4px;
     left: calc(50% - 7.5px);
   }

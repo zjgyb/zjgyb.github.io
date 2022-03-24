@@ -34,29 +34,29 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 
-@import '../styles/theme.scss';
+@import '../styles/theme.less';
 // 按钮相关 start class about button
-@mixin _btn-color($bg, $color) {
-  background-color: $bg;
-  color: $color;
+._btn-color(@bg, @color) {
+  background-color: @bg;
+  color: @color;
 }
 
-@mixin _btn-disable-color($bg, $color) {
-  background-color: $bg;
-  color: $color;
+._btn-disable-color(@bg, @color) {
+  background-color: @bg;
+  color: @color;
 }
 
-@mixin _btn-active-color($bg) {
-  background-color: $bg;
+._btn-active-color(@bg) {
+  background-color: @bg;
 }
 
-@mixin _btn-hover($bg) {
-  background-color: $bg;
+._btn-hover(@bg) {
+  background-color: @bg;
 }
 
-%_btn {
+._btn() {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -98,16 +98,16 @@ export default {
 }
 
 ._btn-default {
-  @extend %_btn;
-  @include _btn-color(#5d5d5d, #fff);
+  ._btn();
+  ._btn-color(#5d5d5d, #fff);
 }
 
 ._btn-dark-light {
-  @extend %_btn;
-  @include _btn-color(#818181, #fff);
+  ._btn();
+  ._btn-color(#818181, #fff);
 
   &:hover {
-    @include _btn-hover(#909090);
+    ._btn-hover(#909090);
   }
 
   &:active {
@@ -116,7 +116,7 @@ export default {
 }
 
 ._btn-light {
-  @extend %_btn;
+  ._btn();
   @include _btn-color(#fff, #666);
 
   &:hover {
@@ -133,7 +133,7 @@ export default {
 }
 
 ._btn-light-dark {
-  @extend %_btn;
+  ._btn();
   @include _btn-color(#fff, #222);
 
   &:hover {
@@ -150,34 +150,34 @@ export default {
 }
 
 ._btn-primary {
-  @extend %_btn;
-  @include _btn-color($active, #fff);
+  ._btn();
+  @include _btn-color(@active, #fff);
 
   &:hover {
-    @include _btn-hover($active);
+    @include _btn-hover(@active);
   }
 
   &:active {
-    @include _btn-active-color($hover-active);
+    @include _btn-active-color(@hover-active);
   }
 
   &._btn-disable {
-    @extend %_btn;
+    ._btn();
     @include _btn-color(#f7f7f7, #aeaeae);
     pointer-events: none;
   }
 }
 
 ._btn-color-primary {
-  @extend %_btn;
-  @include _btn-color(#fff, $active);
+  ._btn();
+  ._btn-color(#fff, @active);
 
   &:hover {
-    @include _btn-hover($active-bg);
+    ._btn-hover(@active-bg);
   }
 
   &:active {
-    @include _btn-active-color($active-bg);
+    ._btn-active-color(@active-bg);
   }
 
   ._btn-content {
@@ -186,35 +186,35 @@ export default {
 }
 
 ._btn-error {
-  @extend %_btn;
-  @include _btn-color($danger, #fff);
+  ._btn();
+  ._btn-color(@danger, #fff);
 
   &:hover {
-    @include _btn-hover(#f54c43);
+    ._btn-hover(#f54c43);
   }
 
   &:active {
-    @include _btn-active-color(#ce100d);
+    ._btn-active-color(#ce100d);
   }
 }
 
 ._btn-gray-primary {
-  @extend %_btn;
-  @include _btn-color(#f7f7f7, $active);
+  ._btn();
+  ._btn-color(#f7f7f7, @active);
   &:active {
-    @include _btn-active-color(#e7e7e7);
+    ._btn-active-color(#e7e7e7);
   }
 }
 
 ._btn-color-error {
-  @extend %_btn;
-  @include _btn-color(#fff, var(--main-error-color));
+  ._btn();
+  ._btn-color(#fff, var(--main-error-color));
   &:hover {
-    @include _btn-hover(#f7f7f7);
+    ._btn-hover(#f7f7f7);
   }
 
   &:active {
-    @include _btn-active-color(#e7e7e7);
+    ._btn-active-color(#e7e7e7);
   }
 
   ._btn-content {
@@ -223,8 +223,8 @@ export default {
 }
 
 ._btn-disable {
-  @extend %_btn;
-  @include _btn-color(#fff, #aeaeae);
+  ._btn();
+  ._btn-color(#fff, #aeaeae);
   pointer-events: none;
   ._btn-content {
     padding: 0 8px;
@@ -232,8 +232,8 @@ export default {
 }
 
 ._btn-color-disable {
-  @extend %_btn;
-  @include _btn-color(#f7f7f7, #aeaeae);
+  ._btn();
+  ._btn-color(#f7f7f7, #aeaeae);
   pointer-events: none;
 }
 </style>

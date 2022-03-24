@@ -40,15 +40,15 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/theme.scss';
-@import '../styles/_mixin.scss';
+<style lang="less" scoped>
+@import '../styles/theme.less';
+@import '../styles/_mixin.less';
 
 .my-textarea {
   position: relative;
 }
 
-%active_label {
+.active_label {
   top: -8px;
   left: 12px;
   font-size: 12px;
@@ -71,17 +71,17 @@ export default {
   @include _scroll-bar;
 
   &:focus {
-    border-color: $active;
+    border-color: @active;
 
     & + .label {
-      @extend %active_label;
-      color: $active;
+      .active_label;
+      color: @active;
     }
   }
 
   &:valid {
     & + .label {
-      @extend %active_label;
+      .active_label;
     }
   }
 }
@@ -110,7 +110,7 @@ export default {
 }
 
 .error {
-  border-color: $danger !important;
-  color: $danger !important;
+  border-color: @danger !important;
+  color: @danger !important;
 }
 </style>

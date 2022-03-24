@@ -1,37 +1,37 @@
 // 滚动条部分
-@mixin _scroll-bar {
+._scroll-bar() {
 
     &::-webkit-scrollbar {
-      $width: 4px;
-      width: $width;
-      height: $width;
+      @width: 4px;
+      width: @width;
+      height: @width;
     }
-  
+
     &::-webkit-scrollbar-track {
       border-radius: 6px;
     }
-  
+
     &::-webkit-scrollbar-thumb {
       border-radius: 6px;
       background-color: #cacbcd;
-  
+
       &:hover {
         cursor: pointer;
         background-color: darkgray;
       }
     }
   }
-  
+
   // 隐藏滚动条
-  @mixin _scroll-bar-hidden {
+  ._scroll-bar-hidden() {
     &::-webkit-scrollbar {
       height: 0;
       opacity: 0;
     }
   }
-  
+
   // 页面居中且出现包含动画
-  @mixin _ele-center {
+  ._ele-center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,10 +39,10 @@
     background-color: #fff;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.16);
   }
-  
-  @mixin _ele-fade-in {
+
+  ._ele-fade-in {
     animation: _fade-in .3s ease-in-out;
-  
+
     @keyframes _fade-in {
       0%{
         // transform: translateX() translateY();
@@ -56,11 +56,11 @@
       }
     }
   }
-  
+
   // 页面离开使的动画
-  @mixin _ele-fade-out {
+  ._ele-fade-out {
     animation: _fade-out .5s ease-in-out;
-  
+
     @keyframes _fade-out {
       0%{
         opacity: 1;
@@ -70,9 +70,9 @@
       }
     }
   }
-  
-  
-  @mixin ele-fade-left {
+
+
+  .ele-fade-left {
     animation: fade-left .25s ease-in-out;
     @keyframes fade-left {
       0%{
@@ -85,4 +85,3 @@
       }
     }
   }
-  
