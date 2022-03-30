@@ -1,0 +1,54 @@
+---
+title: vue-router
+categories: Vue
+---
+
+## 路由模式
+
+有两种模式：`hash`和`history`；
+对应方法：`createWebHashHistory`和`createWebHistory`；
+对应事件：`hashchange`、`popstate`和`history.pushState`
+
+```ts
+import type { RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
+
+const routes: RouteRecordRaw[] = [
+    {
+        path: '/',
+        component: () => import('views/home/index.vue'),
+    },
+    {
+        path: '/login',
+        component: () => import('views/login/index.vue'),
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        component: () => import('views/404/index.vue'),
+    },
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    // history: createWebHashHistory(),
+    routes,
+});
+
+export default router;
+```
+
+## 编程式导航
+
+## 历史记录
+
+## 路由传参
+
+## 嵌套路由
+
+## 命名视图
+
+## 重定向
+
+## 导航守卫
+
+## 路由元信息
