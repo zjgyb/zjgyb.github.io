@@ -39,6 +39,31 @@ export default router;
 
 ## 编程式导航
 
+跳转路由无外乎两种，一种通过`<router-link>`方式跳转，一种是通过`js`进行跳转，同时跳转的方式也有两种，一种是通过`path`的方式，指定具体的path，另一种是通过name的方式，这个在定义路由的时候设置
+
+如下案例就是基本的跳转：
+
+```vue
+<template>
+    <router-link to="/login">跳转</router-link>
+    <router-link :to="{ path: '/login' }">跳转</router-link>
+    <router-link :to="{ name: 'login' }">跳转</router-link>
+    <button @click="onLogin">跳转</button>
+</template>
+
+<script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const onLogin = () => {
+    router.push('/login');
+    router.push({ path: '/login' });
+    router.push({ name: 'login' });
+}
+</script>
+```
+
 ## 历史记录
 
 ## 路由传参
