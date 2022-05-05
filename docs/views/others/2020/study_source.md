@@ -19,6 +19,10 @@ copyright: true
 * [京东代码规范](https://guide.aotu.io/index.html)
 * [flex布局(直观)](https://flexboxfroggy.com/)
 
+## 计算机网络
+
+- [High Performance Browser Networking](https://hpbn.co/)
+
 ## 工具
 
 * [制作徽章的网址](https://img.shields.io/)
