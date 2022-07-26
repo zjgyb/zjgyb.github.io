@@ -19,4 +19,3 @@ date: 2021-02-11
 ## 联系方式
 
 * Email: zjsgyb@outlook.com
-* QQ：1427750684
