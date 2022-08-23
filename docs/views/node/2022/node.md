@@ -99,3 +99,32 @@ JSON Web Token
 包含Header、Payload、Signature
 
 `jsonwebtoken`、`express-jwt`
+
+## Node非阻塞
+
+Node是单线程
+
+## Node事件循环
+
+## Node异常处理
+
+## 模块系统
+
+- 核心模块：直接引用
+- 第三方模块：使用npm安装
+- 自定义模块：自己写模块并引用
+
+1. EsModule中，没有`__filename`和`__dirname`
+2. CommonJs中，this指向当前模块，在EsModule中，this指向undefined
+3. 在EsModule中引入模块需要传递完整的拓展名，而在CommonJs中require函数可以省略
+4. EsModule默认在严格模式下
+
+## Buffer对象
+
+处理大数据、音频、视频等
+
+## Stream流
+
+## 事件模式
+
+
