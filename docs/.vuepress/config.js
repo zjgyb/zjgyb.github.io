@@ -1,5 +1,6 @@
 const themeConfig = require('./config/theme/index');
 const plugins = require('./plugins/index');
+const mathjax3 = require('markdown-it-mathjax3');
 
 module.exports = {
     title: "Tony's Blob",
@@ -20,6 +21,10 @@ module.exports = {
     themeConfig,
     markdown: {
         lineNumbers: true,
+        extendMarkdown: md => {
+            md.set({ breaks: true });
+            md.use(mathjax3)
+        },
     },
-    plugins
+    plugins,
 };
