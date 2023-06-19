@@ -27,4 +27,7 @@ module.exports = {
         },
     },
     plugins,
+    chainWebpack: (config) => {
+        config.module.rule('image').test(/\.(gif|png|jpe?g|webp|svg)$/i).use('file-loader').loader('file-loader')
+    }
 };
