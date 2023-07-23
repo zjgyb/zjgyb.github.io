@@ -28,6 +28,23 @@ module.exports = {
     },
     plugins,
     chainWebpack: (config) => {
-        config.module.rule('image').test(/\.(gif|png|jpe?g|webp|svg)$/i).use('file-loader').loader('file-loader')
+        config.module.rule('xxx')
+            .test(/\.(webp|png|jpe?g|gif)(\?.*)?$/)
+            .use('file-loader')
+            .loader('file-loader')
+            .options({
+                name: 'assets/img/[name].[hash:8].[ext]'
+            });
+        config.module.rules.delete('images')
+        config.module
+        .rule('images')
+          .test(/\.(webp|png|jpe?g|gif)(\?.*)?$/)
+          .use('url-loader')
+            .loader('url-loader')
+            .options({
+              limit: 1,
+              name: `assets/img/[name].[hash:8].[ext]`
+            })
     }
 };
+
