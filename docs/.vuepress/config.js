@@ -33,7 +33,7 @@ module.exports = {
             .use('file-loader')
             .loader('file-loader')
             .options({
-                name: 'assets/img/[name].[hash:8].[ext]'
+                name: 'assets/img/[name].[ext]'
             });
         config.module.rules.delete('images')
         config.module
@@ -43,7 +43,7 @@ module.exports = {
             .loader('url-loader')
             .options({
               limit: 1,
-              name: `assets/img/[name].[hash:8].[ext]`
+              name: `assets/img/[name].[ext]`
             })
     }
 };
