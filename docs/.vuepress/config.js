@@ -1,3 +1,4 @@
+const { options } = require('less');
 const themeConfig = require('./config/theme/index');
 const plugins = require('./plugins/index');
 const mathjax3 = require('markdown-it-mathjax3');
@@ -28,13 +29,6 @@ module.exports = {
     },
     plugins,
     chainWebpack: (config) => {
-        config.module.rule('xxx')
-            .test(/\.(webp|png|jpe?g|gif)(\?.*)?$/)
-            .use('file-loader')
-            .loader('file-loader')
-            .options({
-                name: 'assets/img/[name].[ext]'
-            });
         config.module.rules.delete('images')
         config.module
         .rule('images')
@@ -45,6 +39,16 @@ module.exports = {
               limit: 1,
               name: `assets/img/[name].[ext]`
             })
+
+        config.module.rule('xxx')
+            .test(/\.(webp)$/)
+            .use('file-loader')
+            .loader('file-loader')
+            .options({
+                name: 'assets/img/[name].[ext]',
+                postTransformPublicPath: undefined
+            });
+
     }
 };
 
