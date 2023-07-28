@@ -39,16 +39,6 @@ module.exports = {
               limit: 1,
               name: `assets/img/[name].[ext]`
             })
-
-        config.module.rule('xxx')
-            .test(/\.(webp)$/)
-            .use('file-loader')
-            .loader('file-loader')
-            .options({
-                name: 'assets/img/[name].[ext]',
-                postTransformPublicPath: undefined
-            });
-
     }
 };
 
